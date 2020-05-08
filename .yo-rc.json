@@ -2,7 +2,7 @@
   "pob": {
     "project": {
       "type": "lib",
-      "yarn2": true
+      "yarn2": false
     },
     "renovate": {
       "enable": true

@@ -5,6 +5,11 @@
     "project": "./tsconfig.json",
     "createDefaultProgram": true
   },
-  "plugins": ["@typescript-eslint"],
-  "extends": ["@pob/eslint-config-typescript"]
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "@pob/eslint-config-typescript",
+    "@pob/eslint-config-typescript-react"
+  ]
 }
