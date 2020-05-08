@@ -1,0 +1,108 @@
+{
+  "name": "use-formatted-message",
+  "version": "0.0.0",
+  "description": "react-intl formatted message hook with use memo",
+  "keywords": [],
+  "author": "Christophe Hurpeau <christophe@hurpeau.com> (https://christophe.hurpeau.com)",
+  "license": "ISC",
+  "repository": "https://github.com:christophehurpeau/use-formatted-message.git",
+  "homepage": "https://github.com/christophehurpeau/use-formatted-message",
+  "engines": {
+    "node": ">=10.13.0"
+  },
+  "browserslist": [
+    "> 0.1%",
+    "Firefox ESR",
+    "not ie < 9",
+    "not dead"
+  ],
+  "main": "./index.js",
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index-browser.es.js",
+  "module-dev": "./dist/index-browser-dev.es.js",
+  "browser": "./dist/index-browser.cjs.js",
+  "browser-dev": "./dist/index-browser-dev.cjs.js",
+  "module:node": "./dist/index-node10.es.js",
+  "module:node-dev": "./dist/index-node10-dev.es.js",
+  "module:browser": "./dist/index-browser.es.js",
+  "module:browser-dev": "./dist/index-browser-dev.es.js",
+  "module:modern-browsers": "./dist/index-browsermodern.es.js",
+  "module:modern-browsers-dev": "./dist/index-browsermodern-dev.es.js",
+  "scripts": {
+    "build": "pob-build",
+    "build:definitions": "tsc -p tsconfig.build.json",
+    "clean": "rm -Rf dist",
+    "generate:api": "typedoc --tsconfig tsconfig.doc.json",
+    "generate:docs": "rm -Rf docs ; yarn run generate:api ; touch docs/.nojekyll",
+    "lint": "tsc && eslint --ext .js,.ts --quiet *.js src",
+    "postbuild": "tsc -p tsconfig.build.json",
+    "preversion": "yarn run lint && yarn run build && yarn run generate:docs && repository-check-dirty",
+    "release": "repository-check-dirty && pob-release",
+    "version": "pob-version",
+    "watch": "pob-watch"
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "singleQuote": true,
+    "arrowParens": "always"
+  },
+  "commitlint": {
+    "extends": [
+      "@pob/commitlint-config"
+    ]
+  },
+  "pob": {
+    "babelEnvs": [
+      {
+        "target": "node",
+        "version": "10",
+        "formats": [
+          "cjs",
+          "es"
+        ]
+      },
+      {
+        "target": "browser",
+        "version": "modern",
+        "formats": [
+          "es"
+        ]
+      },
+      {
+        "target": "browser",
+        "formats": [
+          "cjs",
+          "es"
+        ]
+      }
+    ],
+    "entries": [
+      "index"
+    ],
+    "withReact": true
+  },
+  "devDependencies": {
+    "@babel/core": "7.9.6",
+    "@babel/preset-env": "7.9.6",
+    "@pob/commitlint-config": "1.1.1",
+    "@pob/eslint-config": "37.0.2",
+    "@pob/eslint-config-node": "37.0.2",
+    "@pob/eslint-config-typescript": "37.0.2",
+    "@pob/root": "1.4.1",
+    "@typescript-eslint/eslint-plugin": "2.31.0",
+    "@yarnpkg/pnpify": "2.0.0-rc.22",
+    "babel-preset-latest-node": "4.1.0",
+    "babel-preset-modern-browsers": "14.2.1",
+    "eslint": "6.8.0",
+    "eslint-import-resolver-node": "0.3.3",
+    "eslint-plugin-import": "2.20.2",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-prettier": "3.1.2",
+    "eslint-plugin-unicorn": "18.0.1",
+    "husky": "4.2.5",
+    "pob-babel": "24.9.0",
+    "pob-release": "5.5.4",
+    "prettier": "2.0.5",
+    "typedoc": "0.17.6"
+  }
+}

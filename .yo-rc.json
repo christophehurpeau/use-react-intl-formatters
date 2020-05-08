@@ -1,0 +1,15 @@
+{
+  "pob": {
+    "project": {
+      "type": "lib",
+      "yarn2": true
+    },
+    "renovate": {
+      "enable": true
+    },
+    "pob-config": {
+      "documentation": true,
+      "testing": false
+    }
+  }
+}
