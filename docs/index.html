@@ -78,12 +78,46 @@
 					<h2>Install</h2>
 				</a>
 				<pre><code class="language-bash">npm install --save use-formatted-message</code></pre>
+				<a href="#api" id="api" style="color: inherit; text-decoration: none;">
+					<h2>API</h2>
+				</a>
+				<p><a href="https://christophehurpeau.github.io/use-formatted-message/">https://christophehurpeau.github.io/use-formatted-message/</a></p>
+				<a href="#why-use-this-" id="why-use-this-" style="color: inherit; text-decoration: none;">
+					<h2>Why use this ?</h2>
+				</a>
+				<p>This hook uses <code>useMemo</code> to avoid recall <code>intl.formatMessage</code> at each render, like <code>FormattedMessage</code> component.</p>
 				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
 					<h2>Usage</h2>
 				</a>
-				<pre><code class="language-js"><span class="hljs-keyword">import</span> useFormattedMessage <span class="hljs-keyword">from</span> <span class="hljs-string">'use-formatted-message'</span>;
+				<pre><code class="language-js"><span class="hljs-keyword">import</span> { defineMessages } <span class="hljs-keyword">from</span> <span class="hljs-string">'react-intl'</span>;
+<span class="hljs-keyword">import</span> useFormattedMessage <span class="hljs-keyword">from</span> <span class="hljs-string">'use-formatted-message'</span>;
 
-<span class="hljs-built_in">console</span>.log(useFormattedMessage);</code></pre>
+<span class="hljs-keyword">const</span> messages = defineMessages({
+  <span class="hljs-attr">title</span>: {
+    <span class="hljs-attr">id</span>: <span class="hljs-string">'some.key.title'</span>,
+    <span class="hljs-attr">defaultMessage</span>: <span class="hljs-string">'This is the title content'</span>,
+  },
+  <span class="hljs-attr">titleWithParams</span>: {
+    <span class="hljs-attr">id</span>: <span class="hljs-string">'some.key.titleWithParams'</span>,
+    <span class="hljs-attr">defaultMessage</span>: <span class="hljs-string">'This is the title content, with {count}'</span>,
+  },
+});
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">MyComponent</span>(<span class="hljs-params">{ count = <span class="hljs-number">1</span> }</span>) </span>{
+  <span class="hljs-keyword">const</span> title = useFormattedMessage(messages.title);
+  <span class="hljs-keyword">const</span> titleWithParams = useFormattedMessage(
+    messages.titleWithParams,
+    { count },
+    [count],
+  );
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">title</span>=<span class="hljs-string">{title}</span>&gt;</span>Hello<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>{' '}
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">title</span>=<span class="hljs-string">{titleWithParams}</span>&gt;</span>World<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}</code></pre>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">

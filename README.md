@@ -17,10 +17,44 @@
 npm install --save use-formatted-message
 ```
 
+## API
+
+https://christophehurpeau.github.io/use-formatted-message/
+
+## Why use this ?
+
+This hook uses `useMemo` to avoid recall `intl.formatMessage` at each render, like `FormattedMessage` component.
+
 ## Usage
 
 ```js
+import { defineMessages } from 'react-intl';
 import useFormattedMessage from 'use-formatted-message';
 
-console.log(useFormattedMessage);
+const messages = defineMessages({
+  title: {
+    id: 'some.key.title',
+    defaultMessage: 'This is the title content',
+  },
+  titleWithParams: {
+    id: 'some.key.titleWithParams',
+    defaultMessage: 'This is the title content, with {count}',
+  },
+});
+
+function MyComponent({ count = 1 }) {
+  const title = useFormattedMessage(messages.title);
+  const titleWithParams = useFormattedMessage(
+    messages.titleWithParams,
+    { count },
+    [count],
+  );
+
+  return (
+    <div>
+      <span title={title}>Hello</span>{' '}
+      <span title={titleWithParams}>World</span>
+    </div>
+  );
+}
 ```
