@@ -87,7 +87,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.12.10",
-    "@babel/preset-env": "7.12.10",
+    "@babel/preset-env": "7.12.11",
     "@pob/commitlint-config": "1.1.1",
     "@pob/eslint-config": "37.1.0",
     "@pob/eslint-config-node": "37.0.2",
