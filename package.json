@@ -112,6 +112,6 @@
     "react": "16.13.1",
     "react-intl": "4.6.9",
     "typedoc": "0.17.6",
-    "typescript": "3.8.3"
+    "typescript": "3.9.7"
   }
 }
