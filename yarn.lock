@@ -1119,15 +1119,14 @@
   dependencies:
     "@commitlint/config-conventional" "^8.3.4"
 
-"@pob/eslint-config-babel-common@^37.1.0":
-  version "37.1.0"
-  resolved "https://registry.yarnpkg.com/@pob/eslint-config-babel-common/-/eslint-config-babel-common-37.1.0.tgz#9fd4ef40d492f96ea4e62745caee6659f2e5c634"
-  integrity sha512-SS0GTJpurlxMcty9egTd6Ki8jCN16VVMq080jb0KqdAKD4lC5MSwKo/UbgWC2N5lrr7ampjybg0f3ial4zxfaQ==
+"@pob/eslint-config-babel-common@^37.2.0":
+  version "37.2.0"
+  resolved "https://registry.yarnpkg.com/@pob/eslint-config-babel-common/-/eslint-config-babel-common-37.2.0.tgz#c5fd92f788567f12f970647c898f4a59db3a38a0"
+  integrity sha512-sWqK4gjWfFFDGazcmLlm7PBsJ6T//Xwaik2P96yr/hjAlKsOUa/s5fxN5SjIt5RE7r7iVQD49CZa4x7SK4tWZg==
   dependencies:
-    "@pob/eslint-config" "^37.1.0"
-    "@pob/use-eslint-plugin" "^37.0.2"
+    "@pob/eslint-config" "^37.2.0"
+    "@pob/use-eslint-plugin" "^37.2.0"
     eslint-config-airbnb-base "^14.1.0"
-    eslint-plugin-prefer-class-properties "^1.0.0"
 
 "@pob/eslint-config-node@37.2.0":
   version "37.2.0"
@@ -1156,18 +1155,18 @@
   dependencies:
     "@pob/eslint-config-react" "^37.1.0"
 
-"@pob/eslint-config-typescript@37.1.0":
-  version "37.1.0"
-  resolved "https://registry.yarnpkg.com/@pob/eslint-config-typescript/-/eslint-config-typescript-37.1.0.tgz#3a4a70af524447287d1175ada6405161ab160415"
-  integrity sha512-aCyqPZFovCtwz3/fWAkHiXLuxAAWpoIv3IZwJKgy0ij0G91qPdAW6jqVkme1qaVxWU1AWVMHSHrlI9hQMUocPw==
+"@pob/eslint-config-typescript@37.2.0":
+  version "37.2.0"
+  resolved "https://registry.yarnpkg.com/@pob/eslint-config-typescript/-/eslint-config-typescript-37.2.0.tgz#7245b1954d96eeffcf7c4962382cb3f33d39729e"
+  integrity sha512-cIRs7MmxoXK7T5zrfWTeyBjG4W3cEaa7XD3xLNGHDzL9ecd+dMkZwrmlvPJPqqlkOxD//RilrW0XR8ThxSXRXA==
   dependencies:
-    "@pob/eslint-config-babel-common" "^37.1.0"
-    "@pob/use-eslint-plugin" "^37.0.2"
+    "@pob/eslint-config-babel-common" "^37.2.0"
+    "@pob/use-eslint-plugin" "^37.2.0"
     "@typescript-eslint/eslint-plugin" "^2.26.0"
     "@typescript-eslint/parser" "^2.26.0"
     eslint-config-prettier "^6.11.0"
 
-"@pob/eslint-config@37.2.0", "@pob/eslint-config@^37.1.0":
+"@pob/eslint-config@37.2.0", "@pob/eslint-config@^37.1.0", "@pob/eslint-config@^37.2.0":
   version "37.2.0"
   resolved "https://registry.yarnpkg.com/@pob/eslint-config/-/eslint-config-37.2.0.tgz#5d83a64e97abaadfbb1d7196000d14ffa0a81caf"
   integrity sha512-p41n7CxLD1NK27silrSiENqlc/l0PcpOK3jQi30ojjn0VBkB//J8BatF918jzK7u5VvxcSWxPwwupkCfUOO9+g==
@@ -1192,7 +1191,7 @@
     yarn-deduplicate "2.0.0"
     yarnhook "^0.4.3"
 
-"@pob/use-eslint-plugin@^37.0.2", "@pob/use-eslint-plugin@^37.2.0":
+"@pob/use-eslint-plugin@^37.2.0":
   version "37.2.0"
   resolved "https://registry.yarnpkg.com/@pob/use-eslint-plugin/-/use-eslint-plugin-37.2.0.tgz#38be232f71082e05dcc7fefd240c61e5e0c3e08f"
   integrity sha512-m5Imht2peetGgaJhrfQZ7SuLp9CNCMsp4jXazdSiDIUyYZcUYRtkQmL6pC25YdcpU7PebrQkxV0NpKQKZSq8Sg==
@@ -2503,7 +2502,7 @@ eslint-plugin-node@11.1.0, eslint-plugin-node@^11.0.0:
     resolve "^1.10.1"
     semver "^6.1.0"
 
-eslint-plugin-prefer-class-properties@1.0.0, eslint-plugin-prefer-class-properties@^1.0.0:
+eslint-plugin-prefer-class-properties@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-prefer-class-properties/-/eslint-plugin-prefer-class-properties-1.0.0.tgz#0ac117bb641385461d7e019339b77ea2f02bec2e"
   integrity sha1-CsEXu2QThUYdfgGTObd+ovAr7C4=
