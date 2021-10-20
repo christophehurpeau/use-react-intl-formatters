@@ -86,8 +86,8 @@
     "react-intl": "^4.0.0"
   },
   "devDependencies": {
-    "@babel/core": "7.13.10",
-    "@babel/preset-env": "7.13.10",
+    "@babel/core": "7.15.8",
+    "@babel/preset-env": "7.15.8",
     "@pob/commitlint-config": "1.1.1",
     "@pob/eslint-config": "37.1.0",
     "@pob/eslint-config-node": "37.0.2",
