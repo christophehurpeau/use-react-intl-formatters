@@ -92,7 +92,7 @@
     "@pob/eslint-config": "37.2.0",
     "@pob/eslint-config-node": "37.2.0",
     "@pob/eslint-config-typescript": "37.2.0",
-    "@pob/eslint-config-typescript-react": "37.1.0",
+    "@pob/eslint-config-typescript-react": "37.2.0",
     "@pob/root": "1.5.0",
     "@types/react": "16.9.35",
     "@typescript-eslint/eslint-plugin": "2.34.0",
