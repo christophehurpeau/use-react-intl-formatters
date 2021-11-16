@@ -94,7 +94,7 @@
     "@pob/eslint-config-typescript": "37.2.0",
     "@pob/eslint-config-typescript-react": "37.2.0",
     "@pob/root": "1.5.0",
-    "@types/react": "16.9.35",
+    "@types/react": "16.14.21",
     "@typescript-eslint/eslint-plugin": "2.34.0",
     "babel-preset-latest-node": "4.1.0",
     "babel-preset-modern-browsers": "14.2.1",
