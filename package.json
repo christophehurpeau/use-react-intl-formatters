@@ -110,7 +110,7 @@
     "pob-release": "5.5.4",
     "prettier": "2.5.1",
     "react": "16.14.0",
-    "react-intl": "4.6.9",
+    "react-intl": "4.7.6",
     "typedoc": "0.22.10",
     "typescript": "3.9.10"
   }
