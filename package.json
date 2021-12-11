@@ -111,7 +111,7 @@
     "prettier": "2.4.1",
     "react": "16.14.0",
     "react-intl": "4.6.9",
-    "typedoc": "0.22.6",
+    "typedoc": "0.22.10",
     "typescript": "3.9.10"
   }
 }
