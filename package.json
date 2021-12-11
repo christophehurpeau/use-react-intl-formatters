@@ -107,7 +107,7 @@
     "eslint-plugin-unicorn": "18.0.1",
     "husky": "4.3.8",
     "pob-babel": "24.10.0",
-    "pob-release": "5.5.4",
+    "pob-release": "5.6.3",
     "prettier": "2.5.1",
     "react": "16.14.0",
     "react-intl": "4.7.6",
