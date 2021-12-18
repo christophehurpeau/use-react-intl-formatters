@@ -1,13 +1,14 @@
 {
   "pob": {
-    "project": {
-      "type": "lib",
-      "yarn2": false
-    },
     "renovate": {
       "enable": true
     },
-    "pob-config": {
+    "project": {
+      "type": "lib",
+      "packageManager": "yarn",
+      "yarnNodeLinker": "node-modules"
+    },
+    "lib": {
       "documentation": true,
       "testing": false
     }

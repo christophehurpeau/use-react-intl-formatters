@@ -1,0 +1,4 @@
+CHANGELOG.md
+/docs
+/.yarn/**/*
+/dist

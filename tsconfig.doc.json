@@ -1,7 +1,6 @@
 {
   "extends": "./tsconfig.json",
 
-
   "compilerOptions": {
     "rootDirs": [],
     "rootDir": "src",
@@ -9,12 +8,13 @@
   },
 
   "typedocOptions": {
+    "entryPoints": ["src/index.ts"],
+    "exclude": ["src/**/*.test.tsx?", "src/**/__tests__/**"],
+    "readme": "README.md",
     "out": "docs",
+    "excludePrivate": true,
     "gitRevision": "master"
   },
 
-  "exclude": [
-    "src/**/*.test.ts",
-    "src/**/__tests__/**"
-  ]
+  "exclude": ["src/**/*.test.tsx?", "src/**/__tests__/**"]
 }

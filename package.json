@@ -5,39 +5,54 @@
   "keywords": [],
   "author": "Christophe Hurpeau <christophe@hurpeau.com> (https://christophe.hurpeau.com)",
   "license": "ISC",
-  "repository": "https://github.com:christophehurpeau/use-formatted-message.git",
+  "repository": "https://github.com/christophehurpeau/use-formatted-message.git",
   "homepage": "https://github.com/christophehurpeau/use-formatted-message",
+  "type": "module",
   "engines": {
-    "node": ">=10.13.0"
+    "node": "^14.13.1 || >=16.0.0"
   },
+  "packageManager": "yarn@3.1.1",
   "browserslist": [
-    "> 0.1%",
-    "Firefox ESR",
-    "not ie < 9",
-    "not dead"
+    "defaults",
+    "> 0.2%",
+    "not ie < 12",
+    "not safari < 10",
+    "not ios_saf < 10"
   ],
-  "main": "./index.js",
+  "main": "./dist/index-node14.cjs.js",
   "types": "./dist/index.d.ts",
   "module": "./dist/index-browser.es.js",
-  "module-dev": "./dist/index-browser-dev.es.js",
-  "browser": "./dist/index-browser.cjs.js",
-  "browser-dev": "./dist/index-browser-dev.cjs.js",
-  "module:node": "./dist/index-node10.es.js",
-  "module:node-dev": "./dist/index-node10-dev.es.js",
-  "module:browser": "./dist/index-browser.es.js",
-  "module:browser-dev": "./dist/index-browser-dev.es.js",
+  "browser": "./dist/index-browser.es.js",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "node": {
+        "import": "./dist/index-node14.mjs",
+        "require": "./dist/index-node14.cjs.js"
+      },
+      "browser": {
+        "browser:modern": {
+          "import": "./dist/index-browsermodern.es.js"
+        },
+        "import": "./dist/index-browser.es.js",
+        "require": "./dist/index-browser.cjs.js"
+      }
+    }
+  },
+  "module:node": "./dist/index-node14.mjs",
   "module:modern-browsers": "./dist/index-browsermodern.es.js",
-  "module:modern-browsers-dev": "./dist/index-browsermodern-dev.es.js",
+  "sideEffects": false,
   "scripts": {
-    "build": "pob-build",
+    "build": "pob-build && yarn run build:definitions",
     "build:definitions": "tsc -p tsconfig.build.json",
+    "checks": "node scripts/check-package.js",
     "clean": "rm -Rf dist",
     "generate:api": "typedoc --tsconfig tsconfig.doc.json",
     "generate:docs": "rm -Rf docs ; yarn run generate:api ; touch docs/.nojekyll",
-    "lint": "tsc && eslint --ext .js,.ts,.tsx --quiet *.js src",
-    "postbuild": "tsc -p tsconfig.build.json",
-    "preversion": "yarn run lint && yarn run build && yarn run generate:docs && repository-check-dirty",
-    "release": "repository-check-dirty && pob-release",
+    "lint": "yarn run lint:prettier && tsc && yarn run lint:eslint",
+    "lint:eslint": "eslint --report-unused-disable-directives --resolve-plugins-relative-to . --quiet *.{js,cjs,mjs} src scripts",
+    "lint:prettier": "prettier --check .",
+    "postinstallDev": "pob-root-postinstall",
     "version": "pob-version",
     "watch": "pob-watch"
   },
@@ -55,7 +70,7 @@
     "babelEnvs": [
       {
         "target": "node",
-        "version": "10",
+        "version": "14",
         "formats": [
           "cjs",
           "es"
@@ -78,8 +93,7 @@
     ],
     "entries": [
       "index"
-    ],
-    "jsx": false
+    ]
   },
   "peerDependencies": {
     "react": "^16.0.0",
@@ -87,31 +101,22 @@
   },
   "devDependencies": {
     "@babel/core": "7.16.0",
-    "@babel/preset-env": "7.16.4",
-    "@pob/commitlint-config": "1.1.1",
-    "@pob/eslint-config": "37.2.0",
-    "@pob/eslint-config-node": "37.2.0",
-    "@pob/eslint-config-typescript": "37.2.0",
-    "@pob/eslint-config-typescript-react": "37.2.0",
-    "@pob/root": "1.5.0",
+    "@babel/preset-env": "7.16.5",
+    "@babel/preset-react": "7.16.5",
+    "@pob/commitlint-config": "4.0.0",
+    "@pob/eslint-config": "48.0.5",
+    "@pob/eslint-config-typescript": "48.0.6",
+    "@pob/eslint-config-typescript-react": "48.0.6",
+    "@pob/root": "6.1.5",
     "@types/react": "16.9.35",
-    "@typescript-eslint/eslint-plugin": "2.34.0",
-    "babel-preset-latest-node": "4.1.0",
-    "babel-preset-modern-browsers": "14.2.1",
-    "eslint": "6.8.0",
-    "eslint-import-resolver-node": "0.3.6",
-    "eslint-plugin-import": "2.25.3",
-    "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-prefer-class-properties": "1.0.0",
-    "eslint-plugin-prettier": "3.4.1",
-    "eslint-plugin-unicorn": "18.0.1",
-    "husky": "4.3.8",
-    "pob-babel": "24.10.0",
-    "pob-release": "5.5.4",
+    "babel-preset-modern-browsers": "15.0.2",
+    "check-package-dependencies": "3.0.0",
+    "eslint": "8.5.0",
+    "pob-babel": "29.4.2",
     "prettier": "2.5.1",
     "react": "16.14.0",
     "react-intl": "4.7.6",
     "typedoc": "0.22.10",
-    "typescript": "3.9.10"
+    "typescript": "4.5.4"
   }
 }
