@@ -2468,7 +2468,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:16 || 17":
+"@types/react@npm:*, @types/react@npm:16 || 17, @types/react@npm:17.0.37":
   version: 17.0.37
   resolution: "@types/react@npm:17.0.37"
   dependencies:
@@ -2476,16 +2476,6 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: e68b0d59aa69577fc6a6d654b25d5d8408625498f4c483f160b557fac21e840f6e8807cbde93e9f039949b6d624a019b1990d18499c1d65aecf3605c25e30242
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:16.9.35":
-  version: 16.9.35
-  resolution: "@types/react@npm:16.9.35"
-  dependencies:
-    "@types/prop-types": "*"
-    csstype: ^2.2.0
-  checksum: 74c605999ac3e16b2560fdb477c53a3110e02696732902440075d6b8be193c9134bc29a339675e52df3903c9f9441b8281d9ff0ffa024399e6297d30afba8837
   languageName: node
   linkType: hard
 
@@ -3760,13 +3750,6 @@ __metadata:
   dependencies:
     cssom: ~0.3.6
   checksum: 5f05e6fd2e3df0b44695c2f08b9ef38b011862b274e320665176467c0725e44a53e341bc4959a41176e83b66064ab786262e7380fd1cabeae6efee0d255bb4e3
-  languageName: node
-  linkType: hard
-
-"csstype@npm:^2.2.0":
-  version: 2.6.10
-  resolution: "csstype@npm:2.6.10"
-  checksum: c2803b8f0b1c6fe935101435e72360afebf4f77044dea22af2e9574c61a51f2ba58c3c211d61b72013964a0ac1a84533e70dc62e6ef4934d391c0a6ca32311eb
   languageName: node
   linkType: hard
 
@@ -8719,7 +8702,7 @@ __metadata:
     "@pob/eslint-config-typescript-react": 48.0.6
     "@pob/root": 6.1.5
     "@types/jest": 27.0.3
-    "@types/react": 16.9.35
+    "@types/react": 17.0.37
     babel-preset-modern-browsers: 15.0.2
     check-package-dependencies: 3.0.0
     eslint: 8.5.0
