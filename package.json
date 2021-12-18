@@ -1,6 +1,6 @@
 {
   "name": "use-formatted-message",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "react-intl formatted message hook with use memo",
   "keywords": [],
   "author": "Christophe Hurpeau <christophe@hurpeau.com> (https://christophe.hurpeau.com)",
