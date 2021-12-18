@@ -1,4 +1,4 @@
-import { IntlShape } from 'react-intl';
+import type { IntlShape } from 'react-intl';
 declare type FormatMessageParameters = Parameters<IntlShape['formatMessage']>;
 declare type Descriptor = FormatMessageParameters[0];
 declare type Values = FormatMessageParameters[1];
