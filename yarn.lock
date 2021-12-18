@@ -5763,7 +5763,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.6.2, prop-types@npm:^15.7.2":
+"prop-types@npm:^15.7.2":
   version: 15.7.2
   resolution: "prop-types@npm:15.7.2"
   dependencies:
@@ -5839,14 +5839,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:16.14.0":
-  version: 16.14.0
-  resolution: "react@npm:16.14.0"
+"react@npm:17.0.2":
+  version: 17.0.2
+  resolution: "react@npm:17.0.2"
   dependencies:
     loose-envify: ^1.1.0
     object-assign: ^4.1.1
-    prop-types: ^15.6.2
-  checksum: 8484f3ecb13414526f2a7412190575fc134da785c02695eb92bb6028c930bfe1c238d7be2a125088fec663cc7cda0a3623373c46807cf2c281f49c34b79881ac
+  checksum: b254cc17ce3011788330f7bbf383ab653c6848902d7936a87b09d835d091e3f295f7e9dd1597c6daac5dc80f90e778c8230218ba8ad599f74adcc11e33b9d61b
   languageName: node
   linkType: hard
 
@@ -6956,12 +6955,12 @@ __metadata:
     eslint: 8.5.0
     pob-babel: 29.4.2
     prettier: 2.5.1
-    react: 16.14.0
+    react: 17.0.2
     react-intl: 4.7.6
     typedoc: 0.22.10
     typescript: 4.5.4
   peerDependencies:
-    react: ^16.0.0
+    react: ^16.0.0 || ^17.0.0
     react-intl: ^4.0.0
   languageName: unknown
   linkType: soft
