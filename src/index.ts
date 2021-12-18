@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
-import { IntlShape, useIntl } from 'react-intl';
+import type { IntlShape } from 'react-intl';
+import { useIntl } from 'react-intl';
 
 type FormatMessageParameters = Parameters<IntlShape['formatMessage']>;
 type Descriptor = FormatMessageParameters[0];
@@ -17,7 +18,7 @@ export function useFormattedMessage(
 export function useFormattedMessage(
   descriptor: Descriptor,
   values?: Values,
-  deps: any[] = [],
+  deps: unknown[] = [],
 ): Result {
   const intl = useIntl();
   return useMemo((): Result => {
