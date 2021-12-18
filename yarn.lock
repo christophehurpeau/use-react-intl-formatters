@@ -44,7 +44,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.12.16":
+"@babel/core@npm:7.16.5, @babel/core@npm:^7.12.16":
   version: 7.16.5
   resolution: "@babel/core@npm:7.16.5"
   dependencies:
@@ -6938,7 +6938,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "use-formatted-message@workspace:."
   dependencies:
-    "@babel/core": 7.16.0
+    "@babel/core": 7.16.5
     "@babel/preset-env": 7.16.5
     "@babel/preset-react": 7.16.5
     "@pob/commitlint-config": 4.0.0
