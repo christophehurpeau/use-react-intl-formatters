@@ -48,11 +48,14 @@
     "checks": "node scripts/check-package.js",
     "clean": "rm -Rf dist",
     "generate:api": "typedoc --tsconfig tsconfig.doc.json",
-    "generate:docs": "rm -Rf docs ; yarn run generate:api ; touch docs/.nojekyll",
+    "generate:docs": "rm -Rf docs ; yarn run generate:api ; touch docs/.nojekyll && yarn run generate:test-coverage",
+    "generate:test-coverage": "rm -Rf docs/coverage/ ; NODE_ENV=production BABEL_ENV=test NODE_OPTIONS=--experimental-vm-modules jest --coverage --coverageReporters=pob-lcov-reporter --coverageDirectory=docs/coverage/",
     "lint": "yarn run lint:prettier && tsc && yarn run lint:eslint",
     "lint:eslint": "eslint --report-unused-disable-directives --resolve-plugins-relative-to . --quiet *.{js,cjs,mjs} src scripts",
     "lint:prettier": "prettier --check .",
     "postinstallDev": "pob-root-postinstall",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest --watch",
     "version": "pob-version",
     "watch": "pob-watch"
   },
@@ -65,6 +68,27 @@
     "extends": [
       "@pob/commitlint-config"
     ]
+  },
+  "jest": {
+    "cacheDirectory": "./node_modules/.cache/jest",
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.ts?(x)",
+      "<rootDir>/src/**/*.test.ts?(x)"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.ts?(x)"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ],
+    "extensionsToTreatAsEsm": [
+      ".ts",
+      ".tsx"
+    ],
+    "testEnvironment": "node"
   },
   "pob": {
     "babelEnvs": [
@@ -100,7 +124,7 @@
     "react-intl": "^4.0.0 || ^5.0.0"
   },
   "devDependencies": {
-    "@babel/core": "7.16.5",
+    "@babel/core": "7.16.0",
     "@babel/preset-env": "7.16.5",
     "@babel/preset-react": "7.16.5",
     "@pob/commitlint-config": "4.0.0",
@@ -108,11 +132,14 @@
     "@pob/eslint-config-typescript": "48.0.6",
     "@pob/eslint-config-typescript-react": "48.0.6",
     "@pob/root": "6.1.5",
+    "@types/jest": "27.0.3",
     "@types/react": "16.9.35",
     "babel-preset-modern-browsers": "15.0.2",
     "check-package-dependencies": "3.0.0",
     "eslint": "8.5.0",
+    "jest": "27.4.5",
     "pob-babel": "29.4.2",
+    "pob-lcov-reporter": "6.0.0",
     "prettier": "2.5.1",
     "react": "17.0.2",
     "react-intl": "5.23.0",

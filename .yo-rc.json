@@ -10,7 +10,10 @@
     },
     "lib": {
       "documentation": true,
-      "testing": false
+      "testing": {
+        "ci": true,
+        "codecov": true
+      }
     }
   }
 }

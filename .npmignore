@@ -1,3 +1,4 @@
+/.github
 /build
 /docs
 /examples
@@ -9,6 +10,7 @@
 /dist/tsbuildinfo
 /tsconfig.doc.json
 babel.config.json
+__snapshots__
 .yo-rc.json
 /renovate.json
 /yarn.lock
