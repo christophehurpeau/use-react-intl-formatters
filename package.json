@@ -136,7 +136,7 @@
     "@types/react": "17.0.38",
     "babel-preset-modern-browsers": "15.0.2",
     "check-package-dependencies": "3.0.0",
-    "eslint": "8.5.0",
+    "eslint": "8.6.0",
     "jest": "27.4.5",
     "pob-babel": "29.4.2",
     "pob-lcov-reporter": "6.0.0",
