@@ -27,15 +27,13 @@
     "./package.json": "./package.json",
     ".": {
       "node": {
-        "import": "./dist/index-node14.mjs",
-        "require": "./dist/index-node14.cjs.js"
+        "import": "./dist/index-node14.mjs"
       },
       "browser": {
         "browser:modern": {
           "import": "./dist/index-browsermodern.es.js"
         },
-        "import": "./dist/index-browser.es.js",
-        "require": "./dist/index-browser.cjs.js"
+        "import": "./dist/index-browser.es.js"
       }
     }
   },
@@ -96,7 +94,6 @@
         "target": "node",
         "version": "14",
         "formats": [
-          "cjs",
           "es"
         ]
       },
@@ -110,7 +107,6 @@
       {
         "target": "browser",
         "formats": [
-          "cjs",
           "es"
         ]
       }
