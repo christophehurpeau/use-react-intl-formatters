@@ -131,7 +131,7 @@
     "@types/jest": "27.4.0",
     "@types/react": "17.0.38",
     "babel-preset-modern-browsers": "15.0.2",
-    "check-package-dependencies": "3.0.0",
+    "check-package-dependencies": "3.0.1",
     "eslint": "8.7.0",
     "jest": "27.4.7",
     "pob-babel": "29.7.0",
