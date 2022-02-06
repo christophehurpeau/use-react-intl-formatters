@@ -41,10 +41,11 @@
   "module:modern-browsers": "./dist/index-browsermodern.es.js",
   "sideEffects": false,
   "scripts": {
-    "build": "pob-build && yarn run build:definitions",
+    "build": "yarn clean:build && rollup --config rollup.config.mjs && yarn run build:definitions",
     "build:definitions": "tsc -p tsconfig.build.json",
     "checks": "node scripts/check-package.js",
-    "clean": "rm -Rf dist",
+    "clean": "yarn clean:build",
+    "clean:build": "rm -Rf dist",
     "generate:api": "typedoc --tsconfig tsconfig.doc.json",
     "generate:test-coverage": "rm -Rf docs/coverage/ ; NODE_ENV=production BABEL_ENV=test NODE_OPTIONS=--experimental-vm-modules jest --coverage --coverageReporters=pob-lcov-reporter --coverageDirectory=docs/coverage/",
     "lint": "yarn run lint:prettier && tsc && yarn run lint:eslint",
@@ -54,7 +55,7 @@
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest --watch",
     "version": "pob-version",
-    "watch": "pob-watch"
+    "watch": "yarn clean:build && rollup --config rollup.config.mjs --watch"
   },
   "prettier": {
     "trailingComma": "all",
@@ -134,7 +135,7 @@
     "check-package-dependencies": "3.1.0",
     "eslint": "8.8.0",
     "jest": "27.5.0",
-    "pob-babel": "30.0.0",
+    "pob-babel": "31.0.0",
     "prettier": "2.5.1",
     "react": "17.0.2",
     "react-intl": "5.24.4",
