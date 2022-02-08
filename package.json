@@ -121,7 +121,7 @@
     "react-intl": "^4.0.0 || ^5.0.0"
   },
   "devDependencies": {
-    "@babel/core": "7.17.0",
+    "@babel/core": "7.17.2",
     "@babel/preset-env": "7.16.11",
     "@babel/preset-react": "7.16.7",
     "@pob/commitlint-config": "4.1.0",
