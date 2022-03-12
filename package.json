@@ -132,7 +132,7 @@
     "@types/jest": "27.4.1",
     "@types/react": "17.0.40",
     "babel-preset-modern-browsers": "15.0.2",
-    "check-package-dependencies": "3.5.1",
+    "check-package-dependencies": "3.5.2",
     "eslint": "8.11.0",
     "jest": "27.5.1",
     "pob-babel": "31.0.0",
