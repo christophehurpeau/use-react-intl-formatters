@@ -7023,13 +7023,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:17.0.2":
-  version: 17.0.2
-  resolution: "react@npm:17.0.2"
+"react@npm:18.2.0":
+  version: 18.2.0
+  resolution: "react@npm:18.2.0"
   dependencies:
     loose-envify: ^1.1.0
-    object-assign: ^4.1.1
-  checksum: b254cc17ce3011788330f7bbf383ab653c6848902d7936a87b09d835d091e3f295f7e9dd1597c6daac5dc80f90e778c8230218ba8ad599f74adcc11e33b9d61b
+  checksum: 88e38092da8839b830cda6feef2e8505dec8ace60579e46aa5490fc3dc9bba0bd50336507dc166f43e3afc1c42939c09fe33b25fae889d6f402721dcd78fca1b
   languageName: node
   linkType: hard
 
@@ -8183,12 +8182,12 @@ __metadata:
     eslint: 8.20.0
     jest: 28.1.3
     pob-babel: 33.5.0
-    react: 17.0.2
+    react: 18.2.0
     react-intl: 6.0.5
     typedoc: 0.23.10
     typescript: 4.7.4
   peerDependencies:
-    react: ^16.0.0 || ^17.0.0
+    react: ^16.0.0 || ^17.0.0 || ^18.0.0
     react-intl: ^4.0.0 || ^5.0.0 || ^6.0.0
   languageName: unknown
   linkType: soft
