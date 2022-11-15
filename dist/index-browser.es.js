@@ -5,10 +5,10 @@ function useFormattedMessage(descriptor, values, deps) {
   if (deps === void 0) {
     deps = [];
   }
-
   var intl = useIntl();
   return useMemo(function () {
-    return intl.formatMessage(descriptor, values); // eslint-disable-next-line react-hooks/exhaustive-deps
+    return intl.formatMessage(descriptor, values);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [intl, descriptor].concat(deps));
 }
 
