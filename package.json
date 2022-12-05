@@ -115,7 +115,7 @@
     "@pob/eslint-config-typescript": "50.0.0",
     "@pob/eslint-config-typescript-react": "50.0.0",
     "@pob/root": "7.2.0",
-    "@types/jest": "29.2.3",
+    "@types/jest": "29.2.4",
     "@types/react": "18.0.26",
     "babel-preset-modern-browsers": "15.0.2",
     "check-package-dependencies": "3.11.0",
