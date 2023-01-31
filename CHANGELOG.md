@@ -1,5 +1,22 @@
 # Changelog
 
+## [4.0.0](https://github.com/christophehurpeau/use-formatted-message/compare/v3.0.0...v4.0.0) (2023-01-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* drop node 14 and cjs
+
+### Features
+
+* **deps:** update dependency react to v18 ([#144](https://github.com/christophehurpeau/use-formatted-message/issues/144)) ([53d28b5](https://github.com/christophehurpeau/use-formatted-message/commit/53d28b597674f7c5186b3210adf1d0042b429270))
+* **deps:** update dependency react-intl to v6 ([#177](https://github.com/christophehurpeau/use-formatted-message/issues/177)) ([a9deba0](https://github.com/christophehurpeau/use-formatted-message/commit/a9deba053ab59e8e1b4bb3b2c47a5f2015f70eca))
+
+
+### Miscellaneous Chores
+
+* update pob ([6853fbf](https://github.com/christophehurpeau/use-formatted-message/commit/6853fbf3632e2dba937c769f5a9719ef959fdf1c))
+
 ## [3.0.0](https://github.com/christophehurpeau/use-formatted-message/compare/v2.0.0...v3.0.0) (2022-01-02)
 
 
