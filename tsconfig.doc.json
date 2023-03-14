@@ -16,10 +16,16 @@
     "esModuleInterop": true
   },
 
-  "references": [{ "path": "packages/use-formatted-message/tsconfig.json" }],
+  "references": [
+    { "path": "packages/use-react-intl-formatters/tsconfig.json" },
+    { "path": "packages/use-formatted-message/tsconfig.json" }
+  ],
 
   "typedocOptions": {
-    "entryPoints": ["packages/use-formatted-message/src/index.ts"],
+    "entryPoints": [
+      "packages/use-formatted-message/src/index.ts",
+      "packages/use-react-intl-formatters/src/index.ts"
+    ],
     "exclude": ["**/*.test.ts", "**/__tests__/**"],
     "readme": "README.md",
     "out": "docs",

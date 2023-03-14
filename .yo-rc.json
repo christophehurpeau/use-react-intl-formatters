@@ -15,7 +15,7 @@
       "documentation": true,
       "typescript": true,
       "eslint": true,
-      "packageNames": ["use-formatted-message"]
+      "packageNames": ["use-react-intl-formatters", "use-formatted-message"]
     }
   }
 }

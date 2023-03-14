@@ -28,7 +28,10 @@
     "eslint.lintTask.enable": true,
     "eslint.format.enable": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "jest.disabledWorkspaceFolders": ["use-formatted-message"]
+    "jest.disabledWorkspaceFolders": [
+      "use-formatted-message",
+      "use-react-intl-formatters"
+    ]
   },
   "folders": [
     {
@@ -38,6 +41,10 @@
     {
       "name": "use-formatted-message",
       "path": "../packages/use-formatted-message"
+    },
+    {
+      "name": "use-react-intl-formatters",
+      "path": "../packages/use-react-intl-formatters"
     }
   ]
 }

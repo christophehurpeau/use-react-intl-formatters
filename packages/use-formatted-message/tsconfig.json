@@ -37,6 +37,18 @@
     /* Module Resolution Options */
     "moduleResolution": "node" /* Specify module resolution strategy. */,
     "allowSyntheticDefaultImports": true /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */,
-    "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
-  }
+    "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
+
+    "paths": {
+      "use-react-intl-formatters": [
+        "../../../packages/use-react-intl-formatters/src"
+      ],
+      "use-react-intl-formatters/*": [
+        "../../../packages/use-react-intl-formatters/src/*"
+      ]
+    }
+  },
+  "references": [
+    { "path": "../../packages/use-react-intl-formatters/tsconfig.json" }
+  ]
 }
