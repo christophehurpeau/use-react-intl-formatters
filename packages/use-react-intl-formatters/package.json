@@ -1,6 +1,6 @@
 {
   "name": "use-react-intl-formatters",
-  "version": "1.0.0-pre",
+  "version": "1.0.0",
   "description": "react-intl format hooks with use memo",
   "keywords": [],
   "author": "Christophe Hurpeau <christophe@hurpeau.com> (https://christophe.hurpeau.com)",

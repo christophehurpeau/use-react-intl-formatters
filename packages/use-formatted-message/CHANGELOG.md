@@ -1,3 +1,17 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## 4.1.0 (2023-03-14)
+
+
+### Features
+
+* add use-react-intl-formatters ([087a7c7](https://github.com/christophehurpeau/use-formatted-message/commit/087a7c7c740e4f8f4045525f28afddf4b5f206a6))
+
+
+
 # Changelog
 
 ## [4.0.0](https://github.com/christophehurpeau/use-formatted-message/compare/v3.0.0...v4.0.0) (2023-01-31)
