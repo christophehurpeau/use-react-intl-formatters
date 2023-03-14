@@ -1,19 +1,21 @@
 {
   "pob": {
-    "renovate": {
-      "enable": true
-    },
     "project": {
       "type": "lib",
       "packageManager": "yarn",
       "yarnNodeLinker": "node-modules"
     },
-    "lib": {
+    "renovate": {
+      "enable": true
+    },
+    "monorepo": {
+      "ci": true,
+      "testing": true,
+      "codecov": true,
       "documentation": true,
-      "testing": {
-        "ci": true,
-        "codecov": true
-      }
+      "typescript": true,
+      "eslint": true,
+      "packageNames": ["use-formatted-message"]
     }
   }
 }

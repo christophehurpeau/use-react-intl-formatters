@@ -2,8 +2,7 @@
   "root": true,
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "./tsconfig.json",
-    "createDefaultProgram": true
+    "project": "packages/use-formatted-message/tsconfig.json"
   },
   "plugins": ["@typescript-eslint"],
   "extends": [

@@ -1,0 +1,16 @@
+{
+  "pob": {
+    "project": {
+      "type": "lib",
+      "packageManager": "yarn",
+      "yarnNodeLinker": "node-modules"
+    },
+    "lib": {
+      "documentation": false,
+      "testing": {
+        "ci": true,
+        "codecov": true
+      }
+    }
+  }
+}

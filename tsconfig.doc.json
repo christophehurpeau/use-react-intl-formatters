@@ -1,14 +1,29 @@
 {
-  "extends": "./tsconfig.json",
+  "include": ["packages/*/src/**/*.ts"],
+
+  "exclude": [
+    "**/node_modules/**",
+    "**/src/**/*.test.ts",
+    "**/src/**/__tests__/**"
+  ],
+
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["dom", "esnext"],
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true
+  },
+
+  "references": [{ "path": "packages/use-formatted-message/tsconfig.json" }],
 
   "typedocOptions": {
-    "entryPoints": ["src/index.ts"],
-    "exclude": ["src/**/*.test.tsx?", "src/**/__tests__/**"],
+    "entryPoints": ["packages/use-formatted-message/src/index.ts"],
+    "exclude": ["**/*.test.ts", "**/__tests__/**"],
     "readme": "README.md",
     "out": "docs",
     "excludePrivate": true,
-    "gitRevision": "main"
-  },
-
-  "exclude": ["src/**/*.test.tsx?", "src/**/__tests__/**"]
+    "gitRevision": "master"
+  }
 }

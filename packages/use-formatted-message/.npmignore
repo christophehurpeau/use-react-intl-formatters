@@ -1,5 +1,3 @@
-/.husky
-/.github
 /build
 /docs
 /examples
@@ -10,16 +8,10 @@
 /*.config.mjs
 /tsconfig.json
 /dist/definitions/tsbuildinfo
-/tsconfig.doc.json
 babel.config.json
 __snapshots__
 /coverage
 .yo-rc.json
-/renovate.json
-/yarn.lock
-/.yarn
-/.yarnrc.yml
-/.pnp.*
 
 /.settings
 /.project

@@ -1,7 +1,3 @@
-import { dirname } from 'path';
-import { fileURLToPath } from 'url';
-import createRollupConfig from 'pob-babel/createRollupConfig.js';
+import configs1 from './packages/use-formatted-message/rollup.config.mjs';
 
-export default createRollupConfig({
-  cwd: dirname(fileURLToPath(import.meta.url)),
-});
+export default [...configs1];
