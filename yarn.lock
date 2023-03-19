@@ -2818,9 +2818,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pob/eslint-config-typescript@npm:50.0.2":
-  version: 50.0.2
-  resolution: "@pob/eslint-config-typescript@npm:50.0.2"
+"@pob/eslint-config-typescript@npm:50.0.3":
+  version: 50.0.3
+  resolution: "@pob/eslint-config-typescript@npm:50.0.3"
   dependencies:
     "@pob/eslint-config": 50.0.1
     "@pob/use-eslint-plugin": 50.0.0
@@ -2844,7 +2844,7 @@ __metadata:
       optional: true
     eslint-plugin-node:
       optional: true
-  checksum: 6fca34786046d941861d23b612f43d0032a0b8e461d3ac046334e847f4dd282d88e00e97cbb3e4db123eaa87271e1b7c2735bcf3fb86d14b8298b51fe1587d2f
+  checksum: 31eff22e684833f67499168c66601e676c1a7d1bcd1c8c57a8fad52acfb6439c9152783d9d970ff31efb961ec8473b61442421f0981629a0d8815ba2a1a505f5
   languageName: node
   linkType: hard
 
@@ -10524,7 +10524,7 @@ __metadata:
     "@babel/core": 7.20.12
     "@pob/commitlint-config": 5.1.1
     "@pob/eslint-config": 50.0.1
-    "@pob/eslint-config-typescript": 50.0.2
+    "@pob/eslint-config-typescript": 50.0.3
     "@pob/eslint-config-typescript-react": 50.0.1
     "@pob/lerna-light": 6.2.0
     "@pob/root": 7.5.0
