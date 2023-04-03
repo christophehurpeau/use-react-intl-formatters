@@ -81,7 +81,7 @@
     "@babel/preset-react": "7.18.6",
     "@types/react": "18.0.32",
     "babel-preset-modern-browsers": "15.0.2",
-    "pob-babel": "35.6.0",
+    "pob-babel": "35.6.2",
     "react": "18.2.0",
     "react-intl": "6.2.10",
     "typescript": "4.9.5"
