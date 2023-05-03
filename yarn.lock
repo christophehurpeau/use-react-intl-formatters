@@ -3263,14 +3263,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:16 || 17 || 18, @types/react@npm:18.2.0":
-  version: 18.2.0
-  resolution: "@types/react@npm:18.2.0"
+"@types/react@npm:*, @types/react@npm:16 || 17 || 18, @types/react@npm:18.2.1":
+  version: 18.2.1
+  resolution: "@types/react@npm:18.2.1"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: db3d92b423150222a666329f7aa3023e3e942044700557b8a7d161530847e621aec9f56c9e7f71761b06dd164c8a7b17ad52355863efe80963dffa5537e8e5fd
+  checksum: a957e767fa087c7b63274d286d3a6ee2b9ec070159170346995abc5fddcd351a015770eb8452ba7974ded932b379f869b093dbadcbfa786a0a851fb5be581296
   languageName: node
   linkType: hard
 
@@ -10494,7 +10494,7 @@ __metadata:
     "@babel/core": 7.20.12
     "@babel/preset-env": 7.20.2
     "@babel/preset-react": 7.18.6
-    "@types/react": 18.2.0
+    "@types/react": 18.2.1
     babel-preset-modern-browsers: 15.0.2
     pob-babel: 35.6.2
     react: 18.2.0
