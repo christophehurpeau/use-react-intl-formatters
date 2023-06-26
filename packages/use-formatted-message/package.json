@@ -9,17 +9,19 @@
   "homepage": "https://github.com/christophehurpeau/use-formatted-message",
   "type": "module",
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=18.0.0"
   },
   "packageManager": "yarn@3.6.0",
-  "browserslist": [
-    "defaults",
-    "> 0.2%",
-    "not ie < 12",
-    "not safari < 10",
-    "not ios_saf < 10"
-  ],
-  "main": "./dist/index-node16.mjs",
+  "browserslist": {
+    "production": [
+      "defaults",
+      "> 0.2%",
+      "not ie < 12",
+      "not safari < 10",
+      "not ios_saf < 10"
+    ]
+  },
+  "main": "./dist/index-node18.mjs",
   "types": "./dist/definitions/index.d.ts",
   "module": "./dist/index-browser.es.js",
   "browser": "./dist/index-browser.es.js",
@@ -27,7 +29,7 @@
     "./package.json": "./package.json",
     ".": {
       "node": {
-        "import": "./dist/index-node16.mjs"
+        "import": "./dist/index-node18.mjs"
       },
       "browser": {
         "browser:modern": {
@@ -53,7 +55,7 @@
     "babelEnvs": [
       {
         "target": "node",
-        "version": "16"
+        "version": "18"
       },
       {
         "target": "browser",
@@ -76,14 +78,13 @@
     "use-react-intl-formatters": "1.0.0"
   },
   "devDependencies": {
-    "@babel/core": "7.20.12",
-    "@babel/preset-env": "7.20.2",
-    "@babel/preset-react": "7.18.6",
+    "@babel/core": "7.22.5",
+    "@babel/preset-env": "7.22.5",
+    "@babel/preset-react": "7.22.5",
     "@types/react": "18.2.4",
-    "babel-preset-modern-browsers": "15.0.2",
-    "pob-babel": "35.6.2",
+    "pob-babel": "36.0.0",
     "react": "18.2.0",
     "react-intl": "6.2.10",
-    "typescript": "4.9.5"
+    "typescript": "5.1.3"
   }
 }
