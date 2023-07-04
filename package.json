@@ -49,7 +49,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.20.12",
-    "@pob/commitlint-config": "5.1.1",
+    "@pob/commitlint-config": "6.0.1",
     "@pob/eslint-config": "50.0.5",
     "@pob/eslint-config-typescript": "50.0.5",
     "@pob/eslint-config-typescript-react": "50.0.5",
