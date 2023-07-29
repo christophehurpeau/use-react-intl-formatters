@@ -8,7 +8,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x, 18.x]
+        node-version: [18.x, 20.x]
 
     steps:
       - uses: actions/checkout@v3
@@ -42,7 +42,7 @@ jobs:
         if: startsWith(matrix.node-version, '18.')
 
       - name: Generate Test Coverage
-        run: yarn run test --coverage --coverageReporters=json --coverageReporters=text
+        run: yarn run test:coverage
         if: startsWith(matrix.node-version, '18.')
         env:
           CI: true
