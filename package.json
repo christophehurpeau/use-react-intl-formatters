@@ -1,7 +1,6 @@
 {
   "name": "use-react-intl-formatters-monorepo",
   "private": true,
-  "version": "4.0.0",
   "author": "Christophe Hurpeau <christophe@hurpeau.com> (https://christophe.hurpeau.com)",
   "license": "ISC",
   "repository": "https://github.com/christophehurpeau/use-formatted-message.git",
