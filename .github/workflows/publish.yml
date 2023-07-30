@@ -51,7 +51,8 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           YARN_ENABLE_IMMUTABLE_INSTALLS: false
 
-      - run: |
+      - name: Publish to npm
+        run: |
           echo npmAuthToken: "$NODE_AUTH_TOKEN" >> ./.yarnrc.yml
           yarn workspaces foreach --no-private npm publish --tolerate-republish
         if: github.ref == 'refs/heads/main' && !inputs.dry-run
