@@ -51,13 +51,9 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           YARN_ENABLE_IMMUTABLE_INSTALLS: false
 
-      - uses: actions/setup-node@v3
-        if: github.ref == 'refs/heads/main' && !inputs.dry-run
-        with:
-          node-version: 18
-          registry-url: "https://registry.npmjs.org"
-
-      - run: yarn workspaces foreach --no-private npm publish --tolerate-republish
+      - run: |
+          echo npmAuthToken: "$NODE_AUTH_TOKEN" >> ./.yarnrc.yml
+          yarn workspaces foreach --no-private npm publish --tolerate-republish
         if: github.ref == 'refs/heads/main' && !inputs.dry-run
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
