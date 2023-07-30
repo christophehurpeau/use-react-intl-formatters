@@ -1,7 +1,19 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [2.0.0](https://github.com/christophehurpeau/use-formatted-message/compare/use-react-intl-formatters@1.0.0...use-react-intl-formatters@2.0.0) (2023-07-30)
+
+
+### ⚠ BREAKING CHANGES
+
+* drop node 16
+
+### Code Refactoring
+
+* update to node 18 ([f93e9d5](https://github.com/christophehurpeau/use-formatted-message/commit/f93e9d548b32d79402e44986af0c9bf66af4b109))
+
 
 ## 1.0.0 (2023-03-14)
 
