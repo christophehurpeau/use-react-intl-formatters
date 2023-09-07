@@ -3,6 +3,9 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.1](https://github.com/christophehurpeau/use-formatted-message/compare/use-formatted-message@5.0.0...use-formatted-message@5.0.1) (2023-09-07)
+
+
 ## [5.0.0](https://github.com/christophehurpeau/use-formatted-message/compare/use-formatted-message@4.1.0...use-formatted-message@5.0.0) (2023-07-30)
 
 

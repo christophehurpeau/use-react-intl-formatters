@@ -8768,7 +8768,7 @@ __metadata:
     react: 18.2.0
     react-intl: 6.4.4
     typescript: 5.2.2
-    use-react-intl-formatters: 2.0.0
+    use-react-intl-formatters: 2.0.1
   peerDependencies:
     react: ^16.0.0 || ^17.0.0 || ^18.0.0
     react-intl: ^4.0.0 || ^5.0.0 || ^6.0.0
@@ -8795,7 +8795,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"use-react-intl-formatters@2.0.0, use-react-intl-formatters@workspace:packages/use-react-intl-formatters":
+"use-react-intl-formatters@2.0.1, use-react-intl-formatters@workspace:packages/use-react-intl-formatters":
   version: 0.0.0-use.local
   resolution: "use-react-intl-formatters@workspace:packages/use-react-intl-formatters"
   dependencies:

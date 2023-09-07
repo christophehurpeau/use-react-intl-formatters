@@ -3,6 +3,9 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/christophehurpeau/use-formatted-message/compare/use-react-intl-formatters@2.0.0...use-react-intl-formatters@2.0.1) (2023-09-07)
+
+
 ## [2.0.0](https://github.com/christophehurpeau/use-formatted-message/compare/use-react-intl-formatters@1.0.0...use-react-intl-formatters@2.0.0) (2023-07-30)
 
 
