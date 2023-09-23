@@ -29,7 +29,6 @@
     "test:coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage --coverageReporters=json --coverageReporters=text",
     "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest --watch",
     "tsc": "tsc -b",
-    "version": "YARN_ENABLE_IMMUTABLE_INSTALLS=false yarn && git add yarn.lock",
     "watch": "yarn clean:build && rollup --config rollup.config.mjs --watch"
   },
   "prettier": "@pob/root/prettier-config",
