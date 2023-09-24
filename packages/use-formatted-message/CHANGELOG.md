@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.2](https://github.com/christophehurpeau/use-formatted-message/compare/v5.0.1...v5.0.2) (2023-09-24)
+
+Note: no notable changes
+
+Version bump for dependency: use-react-intl-formatters
+
+
 ## [5.0.1](https://github.com/christophehurpeau/use-formatted-message/compare/use-formatted-message@5.0.0...use-formatted-message@5.0.1) (2023-09-07)
 
 

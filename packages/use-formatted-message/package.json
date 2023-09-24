@@ -1,6 +1,6 @@
 {
   "name": "use-formatted-message",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "react-intl formatted message hook with use memo",
   "keywords": [],
   "author": "Christophe Hurpeau <christophe@hurpeau.com> (https://christophe.hurpeau.com)",
@@ -76,7 +76,7 @@
     "react-intl": "^4.0.0 || ^5.0.0 || ^6.0.0"
   },
   "dependencies": {
-    "use-react-intl-formatters": "2.0.1"
+    "use-react-intl-formatters": "5.0.2"
   },
   "devDependencies": {
     "@babel/core": "7.22.20",
