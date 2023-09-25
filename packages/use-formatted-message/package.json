@@ -79,7 +79,7 @@
     "use-react-intl-formatters": "5.0.2"
   },
   "devDependencies": {
-    "@babel/core": "7.22.20",
+    "@babel/core": "7.23.0",
     "@babel/preset-env": "7.22.20",
     "@babel/preset-react": "7.22.15",
     "@types/react": "18.2.22",
