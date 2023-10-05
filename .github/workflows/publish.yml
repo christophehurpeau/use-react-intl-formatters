@@ -1,4 +1,4 @@
-name: publish
+name: Release
 on:
   workflow_dispatch:
     inputs:
@@ -18,7 +18,7 @@ on:
         default: "major"
 
 jobs:
-  publish:
+  release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -45,7 +45,7 @@ jobs:
       - name: New version
         if: github.ref == 'refs/heads/main' && !inputs.dry-run
         run: |
-          yarn version --create-release=github --bump-dependents-highest-as=${{ inputs.bump-dependents-highest-as }} -m 'chore: release [skip ci]\n\n%t'
+          yarn version --create-release=github --bump-dependents-highest-as=${{ inputs.bump-dependents-highest-as }} -m 'chore: release %v [skip ci]'
         env:
           HUSKY: 0
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
