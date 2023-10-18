@@ -91,7 +91,7 @@
     "@babel/preset-env": "7.23.2",
     "@babel/preset-react": "7.22.15",
     "@types/react": "18.2.29",
-    "pob-babel": "36.4.3",
+    "pob-babel": "36.4.4",
     "react": "18.2.0",
     "react-intl": "6.5.0",
     "typescript": "5.2.2"
