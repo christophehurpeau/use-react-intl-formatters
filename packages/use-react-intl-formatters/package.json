@@ -59,7 +59,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.23.3",
-    "pob-babel": "36.6.2",
+    "pob-babel": "36.6.3",
     "react": "18.2.0",
     "react-intl": "6.5.2",
     "typescript": "5.2.2"
