@@ -90,7 +90,7 @@
     "@babel/core": "7.23.6",
     "@babel/preset-env": "7.23.6",
     "@babel/preset-react": "7.23.3",
-    "@types/react": "18.2.44",
+    "@types/react": "18.2.45",
     "pob-babel": "36.7.0",
     "react": "18.2.0",
     "react-intl": "6.5.2",
