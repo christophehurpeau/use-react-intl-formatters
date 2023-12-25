@@ -36,9 +36,6 @@
         "import": "./dist/index-node18.mjs"
       },
       "browser": {
-        "browser:modern": {
-          "import": "./dist/index-browsermodern.es.js"
-        },
         "import": "./dist/index-browser.es.js"
       }
     }
@@ -66,10 +63,6 @@
         "version": "18"
       },
       {
-        "target": "browser",
-        "version": "modern"
-      },
-      {
         "target": "browser"
       }
     ],
@@ -90,7 +83,7 @@
     "@babel/preset-env": "7.23.6",
     "@babel/preset-react": "7.23.3",
     "@types/react": "18.2.45",
-    "pob-babel": "36.8.0",
+    "pob-babel": "38.0.0",
     "react": "18.2.0",
     "react-intl": "6.5.5",
     "typescript": "5.3.3"
