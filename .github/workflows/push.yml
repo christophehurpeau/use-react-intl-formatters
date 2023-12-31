@@ -45,10 +45,11 @@ jobs:
         if: startsWith(matrix.node-version, '20.')
 
       - name: Generate Test Coverage
-        run: yarn run test:coverage
+        run: yarn run test:coverage:json
         if: startsWith(matrix.node-version, '20.')
         env:
           CI: true
+          NODE_V8_COVERAGE: coverage/
 
       - name: Send results to codecov
         uses: codecov/codecov-action@v3
