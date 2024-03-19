@@ -79,9 +79,9 @@
     "use-react-intl-formatters": "5.0.4"
   },
   "devDependencies": {
-    "@babel/core": "7.24.0",
-    "@babel/preset-env": "7.24.0",
-    "@babel/preset-react": "7.23.3",
+    "@babel/core": "7.24.1",
+    "@babel/preset-env": "7.24.1",
+    "@babel/preset-react": "7.24.1",
     "@types/react": "18.2.67",
     "pob-babel": "38.0.3",
     "react": "18.2.0",
