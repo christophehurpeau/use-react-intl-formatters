@@ -2700,13 +2700,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:16 || 17 || 18, @types/react@npm:18.2.76":
-  version: 18.2.76
-  resolution: "@types/react@npm:18.2.76"
+"@types/react@npm:*, @types/react@npm:16 || 17 || 18, @types/react@npm:18.2.77":
+  version: 18.2.77
+  resolution: "@types/react@npm:18.2.77"
   dependencies:
     "@types/prop-types": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 10c0/2bdff894675698bcfdf591e74c7e427cce25e7dbfe21882d8958280e4cc9a07b11d918bf33a38e21fc835b659a25555f0797c5c432bb46b7f1ebc304cae496ed
+  checksum: 10c0/9114149933dbee3fdf5900786e660afe3146e8e277424aaf94dca50e29f1de56802b38a83bb65166ff53da086062bb8d001af563a6c906fe3540bdc46554d05a
   languageName: node
   linkType: hard
 
@@ -8838,7 +8838,7 @@ __metadata:
     "@babel/core": "npm:7.24.4"
     "@babel/preset-env": "npm:7.24.4"
     "@babel/preset-react": "npm:7.24.1"
-    "@types/react": "npm:18.2.76"
+    "@types/react": "npm:18.2.77"
     pob-babel: "npm:38.0.3"
     react: "npm:18.2.0"
     react-intl: "npm:6.5.5"
