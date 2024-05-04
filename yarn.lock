@@ -3454,9 +3454,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-preset-pob-env@npm:11.1.0":
-  version: 11.1.0
-  resolution: "babel-preset-pob-env@npm:11.1.0"
+"babel-preset-pob-env@npm:11.1.1":
+  version: 11.1.1
+  resolution: "babel-preset-pob-env@npm:11.1.1"
   dependencies:
     "@babel/plugin-proposal-nullish-coalescing-operator": "npm:^7.18.6"
     "@babel/plugin-proposal-optional-chaining": "npm:^7.21.0"
@@ -3467,7 +3467,7 @@ __metadata:
     babel-preset-optimizations: "npm:^2.0.0"
   peerDependencies:
     "@babel/core": ^7.23.2
-  checksum: 10c0/deea3467aa352b1c48f9c0e9d69183e01ccc5dc3d0738840f983fbf92efaeac8de12aae58b1ca7a6d7c3ba01b44373d0c98ae8aee1f9d36ca638e004118d8ee6
+  checksum: 10c0/654a01f7ecbc7908ac3ba5259f6fce5de1cc16fac00d929bb045fb0408b9c38e99f67b1359c45edd5dab894a6d11f21a9b038fe156ae7a8e34abb1e11f34f9f9
   languageName: node
   linkType: hard
 
@@ -7410,9 +7410,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pob-babel@npm:38.1.0":
-  version: 38.1.0
-  resolution: "pob-babel@npm:38.1.0"
+"pob-babel@npm:38.1.1":
+  version: 38.1.1
+  resolution: "pob-babel@npm:38.1.1"
   dependencies:
     "@babel/core": "npm:^7.23.2"
     "@babel/plugin-transform-runtime": "npm:7.24.3"
@@ -7421,7 +7421,7 @@ __metadata:
     "@rollup/plugin-json": "npm:6.1.0"
     "@rollup/plugin-node-resolve": "npm:15.2.3"
     "@rollup/plugin-run": "npm:3.0.2"
-    babel-preset-pob-env: "npm:11.1.0"
+    babel-preset-pob-env: "npm:11.1.1"
     rollup: "npm:3.29.4"
     rollup-config-external-dependencies: "npm:^3.0.0"
     semver: "npm:^7.3.7"
@@ -7435,7 +7435,7 @@ __metadata:
   bin:
     pob-babel-clean-out: ./bin/pob-babel-clean-out.js
     rollup: ./bin/rollup.cjs
-  checksum: 10c0/5469ce70150dea404a13bf61df9d9fabbfd6c39a4b71ad707223c145c3f26bc5c4ac764d6e2df5827e53ab160a291f4f8bdfde300464c032954d76a346eede23
+  checksum: 10c0/70c40d1b23db2fb8ef0e5ae4878c72b08e93ec05b475bf0039705d5786a4586fdd8bfbafd89d2fa5f0ec0887c23a3ff004b871113ba4d04c21a5ddccdbac2836
   languageName: node
   linkType: hard
 
@@ -8801,7 +8801,7 @@ __metadata:
     "@babel/preset-env": "npm:7.24.5"
     "@babel/preset-react": "npm:7.24.1"
     "@types/react": "npm:18.3.1"
-    pob-babel: "npm:38.1.0"
+    pob-babel: "npm:38.1.1"
     react: "npm:18.3.0"
     react-intl: "npm:6.5.5"
     typescript: "npm:5.4.5"
@@ -8826,7 +8826,7 @@ __metadata:
     check-package-dependencies: "npm:7.1.1"
     eslint: "npm:8.57.0"
     jest: "npm:29.7.0"
-    pob-babel: "npm:38.1.0"
+    pob-babel: "npm:38.1.1"
     typedoc: "npm:0.25.13"
     typescript: "npm:5.4.5"
   languageName: unknown
@@ -8837,7 +8837,7 @@ __metadata:
   resolution: "use-react-intl-formatters@workspace:packages/use-react-intl-formatters"
   dependencies:
     "@babel/core": "npm:7.24.5"
-    pob-babel: "npm:38.1.0"
+    pob-babel: "npm:38.1.1"
     react: "npm:18.3.0"
     react-intl: "npm:6.5.5"
     typescript: "npm:5.4.5"
