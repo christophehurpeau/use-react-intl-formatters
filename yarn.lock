@@ -2351,15 +2351,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pob/rollup@npm:1.1.0":
-  version: 1.1.0
-  resolution: "@pob/rollup@npm:1.1.0"
+"@pob/rollup@npm:1.1.1":
+  version: 1.1.1
+  resolution: "@pob/rollup@npm:1.1.1"
   dependencies:
     rollup: "npm:3.29.4"
   bin:
     pob-rollup-clean-out: ./bin/pob-rollup-clean-out.js
     rollup: ./bin/rollup.cjs
-  checksum: 10c0/63bb1e8146c5934317594d1f4a48b9fca3a19d47b862d8f596e9ae0ca2dc9319ca3b958443961752496c480fcfe9bb2172e37b5ec4e3396490aadf10c503c3a3
+  checksum: 10c0/7f290da8e595bcbe2e307e7bf5e87e50677f2e734091f4bf44cee10215548d77d03171911e41f67102f3ca81f6549c59b81becdfae7e56fd7c607c4c22d33f93
   languageName: node
   linkType: hard
 
@@ -3281,10 +3281,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-fix-class-properties-uninitialized@npm:7.2.2":
-  version: 7.2.2
-  resolution: "babel-plugin-fix-class-properties-uninitialized@npm:7.2.2"
-  checksum: 10c0/df004af67893080c8fb2a2289dd60a93d6ea1d4233f979f0982a4e4bd34e40b5d924b68e22f212bbbde6298c594752bb7d8259256b50cf0c1b8bd62e16c98c52
+"babel-plugin-fix-class-properties-uninitialized@npm:7.2.3":
+  version: 7.2.3
+  resolution: "babel-plugin-fix-class-properties-uninitialized@npm:7.2.3"
+  checksum: 10c0/a7e15292fa0d302b9ae079afe3c1b2d230ebab74c14be1c94ba8096a8eaa1f46afd36bb4723e4b0a72a02ab061fc467335362e5719cdb627f7fb4b6c37445c5a
   languageName: node
   linkType: hard
 
@@ -3454,20 +3454,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-preset-pob-env@npm:11.1.2":
-  version: 11.1.2
-  resolution: "babel-preset-pob-env@npm:11.1.2"
+"babel-preset-pob-env@npm:11.1.3":
+  version: 11.1.3
+  resolution: "babel-preset-pob-env@npm:11.1.3"
   dependencies:
     "@babel/plugin-proposal-nullish-coalescing-operator": "npm:^7.18.6"
     "@babel/plugin-proposal-optional-chaining": "npm:^7.21.0"
     "@babel/plugin-transform-modules-commonjs": "npm:^7.23.0"
     "@babel/preset-typescript": "npm:^7.23.2"
     babel-plugin-discard-module-references: "npm:^1.1.2"
-    babel-plugin-fix-class-properties-uninitialized: "npm:7.2.2"
+    babel-plugin-fix-class-properties-uninitialized: "npm:7.2.3"
     babel-preset-optimizations: "npm:^2.0.0"
   peerDependencies:
     "@babel/core": ^7.23.2
-  checksum: 10c0/29e79bd61c32371b811d2bcdb1c9360829e28a25c8d28593128f028ba81d8ce563b1e9b3fc23a82c294e549ea459d00105b626e6bded2ec2cd6dd1c95818997e
+  checksum: 10c0/3d7074984d6216e6fed1f39ed03183d9b0c04733166398efd5309e1161bd903d65948bec3d3e97bb19c0c5232a21b3b400cc8698b2093650f80db0a33a31165b
   languageName: node
   linkType: hard
 
@@ -7410,18 +7410,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pob-babel@npm:38.1.2":
-  version: 38.1.2
-  resolution: "pob-babel@npm:38.1.2"
+"pob-babel@npm:38.1.3":
+  version: 38.1.3
+  resolution: "pob-babel@npm:38.1.3"
   dependencies:
     "@babel/core": "npm:^7.23.2"
     "@babel/plugin-transform-runtime": "npm:7.24.3"
-    "@pob/rollup": "npm:1.1.0"
+    "@pob/rollup": "npm:1.1.1"
     "@rollup/plugin-babel": "npm:6.0.4"
     "@rollup/plugin-json": "npm:6.1.0"
     "@rollup/plugin-node-resolve": "npm:15.2.3"
     "@rollup/plugin-run": "npm:3.0.2"
-    babel-preset-pob-env: "npm:11.1.2"
+    babel-preset-pob-env: "npm:11.1.3"
     rollup: "npm:3.29.4"
     rollup-config-external-dependencies: "npm:^3.0.0"
     semver: "npm:^7.3.7"
@@ -7435,7 +7435,7 @@ __metadata:
   bin:
     pob-babel-clean-out: ./bin/pob-babel-clean-out.js
     rollup: ./bin/rollup.cjs
-  checksum: 10c0/e7c525f63dccd787090db9017a1194b9000beebb1bc3e05e281ef887db99fc1b97ba97343db893b882a795a797335a65822c02d98e201a43546cd0d5eff19422
+  checksum: 10c0/cd88a1b77962551bf50bc92e4ab724c4dc567896df5e9d37d6e81cc64b4b5a89c1a17ee77da6df36b5d5f8d8ab82c945df8295b2dca1c104bd6eb5e40454e987
   languageName: node
   linkType: hard
 
@@ -8801,7 +8801,7 @@ __metadata:
     "@babel/preset-env": "npm:7.24.5"
     "@babel/preset-react": "npm:7.24.1"
     "@types/react": "npm:18.3.1"
-    pob-babel: "npm:38.1.2"
+    pob-babel: "npm:38.1.3"
     react: "npm:18.3.0"
     react-intl: "npm:6.5.5"
     typescript: "npm:5.4.5"
@@ -8826,7 +8826,7 @@ __metadata:
     check-package-dependencies: "npm:7.1.1"
     eslint: "npm:8.57.0"
     jest: "npm:29.7.0"
-    pob-babel: "npm:38.1.2"
+    pob-babel: "npm:38.1.3"
     typedoc: "npm:0.25.13"
     typescript: "npm:5.4.5"
   languageName: unknown
@@ -8837,7 +8837,7 @@ __metadata:
   resolution: "use-react-intl-formatters@workspace:packages/use-react-intl-formatters"
   dependencies:
     "@babel/core": "npm:7.24.5"
-    pob-babel: "npm:38.1.2"
+    pob-babel: "npm:38.1.3"
     react: "npm:18.3.0"
     react-intl: "npm:6.5.5"
     typescript: "npm:5.4.5"
