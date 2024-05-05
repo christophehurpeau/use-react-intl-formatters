@@ -2234,12 +2234,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pob/commitlint-config@npm:6.3.2":
-  version: 6.3.2
-  resolution: "@pob/commitlint-config@npm:6.3.2"
+"@pob/commitlint-config@npm:6.3.3":
+  version: 6.3.3
+  resolution: "@pob/commitlint-config@npm:6.3.3"
   dependencies:
     "@commitlint/config-conventional": "npm:^18.0.0"
-  checksum: 10c0/87c20ffaf102a3d68a9bcc39f5aae64800fab756e888cfd4cd8d735e45000b1df613d43d1a16ec5b4f4b39ed4184edf00dac92aea19b406f6fad876c6275076b
+  checksum: 10c0/ea8258dc5135c0363d7422e3edc7d55a40258edc390d5722a974dc988c3784db6092f344aff21f2a510fd42cb1ec1474e2e9a504885924fcfc7099fc90f57f84
   languageName: node
   linkType: hard
 
@@ -8817,7 +8817,7 @@ __metadata:
   resolution: "use-react-intl-formatters-monorepo@workspace:."
   dependencies:
     "@babel/core": "npm:7.24.5"
-    "@pob/commitlint-config": "npm:6.3.2"
+    "@pob/commitlint-config": "npm:6.3.3"
     "@pob/eslint-config": "npm:53.0.0"
     "@pob/eslint-config-typescript": "npm:53.1.0"
     "@pob/eslint-config-typescript-react": "npm:53.0.0"
