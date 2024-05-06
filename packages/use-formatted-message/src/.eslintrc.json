@@ -2,12 +2,12 @@
   "root": true,
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "EXPERIMENTAL_useProjectService": true,
     "project": "packages/use-formatted-message/tsconfig.json"
   },
   "plugins": ["@typescript-eslint"],
   "extends": [
     "@pob/eslint-config-typescript",
+    "@pob/eslint-config-typescript/node",
     "@pob/eslint-config-typescript-react"
   ],
   "ignorePatterns": ["*.d.ts"],

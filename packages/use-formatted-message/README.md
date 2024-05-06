@@ -31,17 +31,17 @@ This hook uses `useMemo` to avoid recall `intl.formatMessage` at each render, li
 ## Usage
 
 ```js
-import { defineMessages } from 'react-intl';
-import useFormattedMessage from 'use-formatted-message';
+import { defineMessages } from "react-intl";
+import useFormattedMessage from "use-formatted-message";
 
 const messages = defineMessages({
   title: {
-    id: 'some.key.title',
-    defaultMessage: 'This is the title content',
+    id: "some.key.title",
+    defaultMessage: "This is the title content",
   },
   titleWithParams: {
-    id: 'some.key.titleWithParams',
-    defaultMessage: 'This is the title content, with {count}',
+    id: "some.key.titleWithParams",
+    defaultMessage: "This is the title content, with {count}",
   },
 });
 
@@ -55,7 +55,7 @@ function MyComponent({ count = 1 }) {
 
   return (
     <div>
-      <span title={title}>Hello</span>{' '}
+      <span title={title}>Hello</span>{" "}
       <span title={titleWithParams}>World</span>
     </div>
   );
