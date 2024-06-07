@@ -2282,7 +2282,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/core@npm:^5.0.0":
+"@octokit/core@npm:^5.0.2":
   version: 5.2.0
   resolution: "@octokit/core@npm:5.2.0"
   dependencies:
@@ -2318,13 +2318,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/openapi-types@npm:^20.0.0":
-  version: 20.0.0
-  resolution: "@octokit/openapi-types@npm:20.0.0"
-  checksum: 10c0/5176dcc3b9d182ede3d446750cfa5cf31139624785a73fcf3511e3102a802b4d7cc45e999c27ed91d73fe8b7d718c8c406facb48688926921a71fe603b7db95d
-  languageName: node
-  linkType: hard
-
 "@octokit/openapi-types@npm:^22.2.0":
   version: 22.2.0
   resolution: "@octokit/openapi-types@npm:22.2.0"
@@ -2332,14 +2325,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/plugin-paginate-rest@npm:^9.0.0":
-  version: 9.2.1
-  resolution: "@octokit/plugin-paginate-rest@npm:9.2.1"
+"@octokit/plugin-paginate-rest@npm:11.3.1":
+  version: 11.3.1
+  resolution: "@octokit/plugin-paginate-rest@npm:11.3.1"
   dependencies:
-    "@octokit/types": "npm:^12.6.0"
+    "@octokit/types": "npm:^13.5.0"
   peerDependencies:
     "@octokit/core": 5
-  checksum: 10c0/1dc55032a9e0c3e6440080a319975c9e4f189913fbc8870a48048d0c712473ea3d902ba247a37a46d45d502859b2728731a0d285107e4b0fa628d380f87163b4
+  checksum: 10c0/72107ff7e459c49d1f13bbe44ac07b073497692eba28cb5ac6dbfa41e0ebc059ad7bccfa3dd45d3165348adcc2ede8ac159f8a9b637389b8e335af16aaa01469
   languageName: node
   linkType: hard
 
@@ -2352,14 +2345,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/plugin-rest-endpoint-methods@npm:^10.0.0":
-  version: 10.4.1
-  resolution: "@octokit/plugin-rest-endpoint-methods@npm:10.4.1"
+"@octokit/plugin-rest-endpoint-methods@npm:13.2.2":
+  version: 13.2.2
+  resolution: "@octokit/plugin-rest-endpoint-methods@npm:13.2.2"
   dependencies:
-    "@octokit/types": "npm:^12.6.0"
+    "@octokit/types": "npm:^13.5.0"
   peerDependencies:
-    "@octokit/core": 5
-  checksum: 10c0/4b8f64c0f7fa12464546ad312a5289c2a799967e01e90e2c4923ec6e9604cf212dcb50d9795c9a688867f973c9c529c5950368564c560406c652bcd298f090af
+    "@octokit/core": ^5
+  checksum: 10c0/0f2b14b7a185b49908bcc01bcae9849aae2da46c88f500c143d230caa3cd35540839b916e88a4642c60a5499d33e7a37faf1aa42c5bab270cefc10f5d6202893
   languageName: node
   linkType: hard
 
@@ -2386,28 +2379,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/rest@npm:20.0.2":
-  version: 20.0.2
-  resolution: "@octokit/rest@npm:20.0.2"
+"@octokit/rest@npm:20.1.1":
+  version: 20.1.1
+  resolution: "@octokit/rest@npm:20.1.1"
   dependencies:
-    "@octokit/core": "npm:^5.0.0"
-    "@octokit/plugin-paginate-rest": "npm:^9.0.0"
+    "@octokit/core": "npm:^5.0.2"
+    "@octokit/plugin-paginate-rest": "npm:11.3.1"
     "@octokit/plugin-request-log": "npm:^4.0.0"
-    "@octokit/plugin-rest-endpoint-methods": "npm:^10.0.0"
-  checksum: 10c0/e9bfc617d0e0bfb0ba9dea3d1e0a19167c5a255beac622dd34280e1754dfab7688323b3251f8e8c85494b39548ecc52385e8b84e21ce0627f58176562a6e2fae
+    "@octokit/plugin-rest-endpoint-methods": "npm:13.2.2"
+  checksum: 10c0/9b62e0372381b548806edbd9e32059ebaec315ddf90e9c3df7e0f2bfab2fc938ca5c3b939035e082e245315b2359947f52f853027a8ca2510fddb79ff5cc9e8a
   languageName: node
   linkType: hard
 
-"@octokit/types@npm:^12.6.0":
-  version: 12.6.0
-  resolution: "@octokit/types@npm:12.6.0"
-  dependencies:
-    "@octokit/openapi-types": "npm:^20.0.0"
-  checksum: 10c0/0bea58bda46c93287f5a80a0e52bc60e7dc7136b8a38c3569d63d073fb9df4a56acdb9d9bdba9978f37c374a4a6e3e52886ef5b08cace048adb0012cacef942c
-  languageName: node
-  linkType: hard
-
-"@octokit/types@npm:^13.0.0, @octokit/types@npm:^13.1.0":
+"@octokit/types@npm:^13.0.0, @octokit/types@npm:^13.1.0, @octokit/types@npm:^13.5.0":
   version: 13.5.0
   resolution: "@octokit/types@npm:13.5.0"
   dependencies:
@@ -2513,9 +2497,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pob/root@npm:11.0.0":
-  version: 11.0.0
-  resolution: "@pob/root@npm:11.0.0"
+"@pob/root@npm:11.1.0":
+  version: 11.1.0
+  resolution: "@pob/root@npm:11.1.0"
   dependencies:
     "@commitlint/cli": "npm:19.3.0"
     "@pob/pretty-eslint-config": "npm:6.0.0"
@@ -2530,7 +2514,7 @@ __metadata:
     repository-check-dirty: "npm:7.0.0"
     semver: "npm:^7.3.7"
     which-pm-runs: "npm:1.1.0"
-    yarn-version: "npm:1.0.0"
+    yarn-version: "npm:1.1.0"
   bin:
     commitlint: ./bin/commitlint.js
     pob-root-lint-staged: ./bin/pob-root-lint-staged.js
@@ -2541,7 +2525,7 @@ __metadata:
     pretty-pkg: ./bin/pretty-pkg.js
     repository-check-dirty: ./bin/repository-check-dirty.js
     yarn-version: ./bin/yarn-version.js
-  checksum: 10c0/86f2c1b89af3c9d28891aa58907ad3dd848f48d5a7938451735adf497869ddf4d09b173bb0aa0b6a71dd616ec4a1e5c5265f75d67b2567a8f526a0a9836d2c07
+  checksum: 10c0/6f9b61efeabbd31bc4e885e6a0c19430e0d9225a13f676e57277c08e6924ba687bbc6c991cb427a2ae6bae34273f4af4e1ea0a467b27bc7113c816698d0537e3
   languageName: node
   linkType: hard
 
@@ -3975,14 +3959,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:12.0.0":
-  version: 12.0.0
-  resolution: "commander@npm:12.0.0"
-  checksum: 10c0/e51cac1d1d0aa1f76581981d2256a9249497e08f5a370bf63b0dfc7e76a647fc8cbc3ddd507928f2bdca6c514c83834e87e2687ace2fe2fc7cc7e631bf80f83d
-  languageName: node
-  linkType: hard
-
-"commander@npm:~12.1.0":
+"commander@npm:12.1.0, commander@npm:~12.1.0":
   version: 12.1.0
   resolution: "commander@npm:12.1.0"
   checksum: 10c0/6e1996680c083b3b897bfc1cfe1c58dfbcd9842fd43e1aaf8a795fbc237f65efcc860a3ef457b318e73f29a4f4a28f6403c3d653d021d960e4632dd45bde54a9
@@ -9294,7 +9271,7 @@ __metadata:
     "@pob/eslint-config": "npm:56.0.0"
     "@pob/eslint-config-typescript": "npm:56.0.0"
     "@pob/eslint-config-typescript-react": "npm:56.0.0"
-    "@pob/root": "npm:11.0.0"
+    "@pob/root": "npm:11.1.0"
     "@types/jest": "npm:29.5.12"
     check-package-dependencies: "npm:7.1.1"
     eslint: "npm:8.57.0"
@@ -9565,15 +9542,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yarn-version@npm:1.0.0":
-  version: 1.0.0
-  resolution: "yarn-version@npm:1.0.0"
+"yarn-version@npm:1.1.0":
+  version: 1.1.0
+  resolution: "yarn-version@npm:1.1.0"
   dependencies:
     "@conventional-changelog/git-client": "npm:1.0.1"
     "@npmcli/map-workspaces": "npm:3.0.6"
-    "@octokit/rest": "npm:20.0.2"
+    "@octokit/rest": "npm:20.1.1"
     "@pob/pretty-pkg": "npm:8.0.0"
-    commander: "npm:12.0.0"
+    commander: "npm:12.1.0"
     conventional-changelog-conventionalcommits: "npm:8.0.0"
     conventional-changelog-core: "npm:8.0.0"
     conventional-changelog-preset-loader: "npm:5.0.0"
@@ -9586,7 +9563,7 @@ __metadata:
     semver: "npm:7.6.2"
   bin:
     yarn-version: ./build/index-node18.mjs
-  checksum: 10c0/21bbd0996832c81369d5d48f686fbc76f331aa7c1404d571619a5d9070947ba6caf055d3ae4519f99d352b464aadf00d2642de0f6d061216489c77647ff0eb10
+  checksum: 10c0/56ca6ad2a320eaccb43c41dcfeb94cc3d7db3dbe0715ae48cae3bafada4dd8ac4218019427a8eb646c79be2fe6e929344213170a4e8b5ac1a814fabc5299b502
   languageName: node
   linkType: hard
 
