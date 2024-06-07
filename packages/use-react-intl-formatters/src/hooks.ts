@@ -1,35 +1,35 @@
-import { useCallback, useMemo } from 'react';
-import type { IntlShape } from 'react-intl';
-import { useIntl } from 'react-intl';
+import { useCallback, useMemo } from "react";
+import type { IntlShape } from "react-intl";
+import { useIntl } from "react-intl";
 
 /* formatters */
 
 interface UseIntlFormatters {
-  formatMessage: IntlShape['formatMessage'];
+  formatMessage: IntlShape["formatMessage"];
   formatDate: (
     value: FormatDateParameters[0],
     { format, timeZone }: UseFormattedDateOptions,
-  ) => ReturnType<IntlShape['formatDate']>;
+  ) => ReturnType<IntlShape["formatDate"]>;
   formatTime: (
     value: FormatDateParameters[0],
     { format, timeZone }: UseFormattedTimeOptions,
-  ) => ReturnType<IntlShape['formatTime']>;
+  ) => ReturnType<IntlShape["formatTime"]>;
 }
 
 export function useIntlFormatters(): UseIntlFormatters {
   const intl = useIntl();
 
-  const formatMessage = useCallback<UseIntlFormatters['formatMessage']>(
+  const formatMessage = useCallback<UseIntlFormatters["formatMessage"]>(
     // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
     (descriptor: any, values: any) => intl.formatMessage(descriptor, values),
     [intl],
   );
-  const formatDate = useCallback<UseIntlFormatters['formatDate']>(
+  const formatDate = useCallback<UseIntlFormatters["formatDate"]>(
     (value, { format, timeZone }) =>
       intl.formatDate(value, { format, timeZone }),
     [intl],
   );
-  const formatTime = useCallback<UseIntlFormatters['formatTime']>(
+  const formatTime = useCallback<UseIntlFormatters["formatTime"]>(
     (value, { format, timeZone }) =>
       intl.formatTime(value, { format, timeZone }),
     [intl],
@@ -40,7 +40,7 @@ export function useIntlFormatters(): UseIntlFormatters {
 
 /* message */
 
-type FormatMessageParameters = Parameters<IntlShape['formatMessage']>;
+type FormatMessageParameters = Parameters<IntlShape["formatMessage"]>;
 
 export function useFormattedMessage(
   descriptor: FormatMessageParameters[0],
@@ -49,12 +49,12 @@ export function useFormattedMessage(
   descriptor: FormatMessageParameters[0],
   values: FormatMessageParameters[1],
   deps: unknown[],
-): NonNullable<ReturnType<IntlShape['formatMessage']>>;
+): NonNullable<ReturnType<IntlShape["formatMessage"]>>;
 export function useFormattedMessage(
   descriptor: FormatMessageParameters[0],
   values?: FormatMessageParameters[1],
   deps: unknown[] = [],
-): ReturnType<IntlShape['formatMessage']> {
+): ReturnType<IntlShape["formatMessage"]> {
   const intlFormatters = useIntlFormatters();
   return useMemo(() => {
     return intlFormatters.formatMessage(descriptor, values);
@@ -65,7 +65,7 @@ export function useFormattedMessage(
 /* date */
 
 type IntlDateFormat = string;
-type FormatDateParameters = Parameters<IntlShape['formatDate']>;
+type FormatDateParameters = Parameters<IntlShape["formatDate"]>;
 
 export interface UseFormattedDateOptions {
   format: IntlDateFormat;
@@ -75,7 +75,7 @@ export interface UseFormattedDateOptions {
 export function useFormattedDate(
   value: FormatDateParameters[0],
   { format, timeZone }: UseFormattedDateOptions,
-): ReturnType<IntlShape['formatDate']> {
+): ReturnType<IntlShape["formatDate"]> {
   const { formatDate } = useIntlFormatters();
 
   return useMemo(() => {
@@ -94,7 +94,7 @@ export interface UseFormattedTimeOptions {
 export function useFormattedTime(
   value: FormatDateParameters[0],
   { format, timeZone }: UseFormattedTimeOptions,
-): ReturnType<IntlShape['formatTime']> {
+): ReturnType<IntlShape["formatTime"]> {
   const { formatTime } = useIntlFormatters();
 
   return useMemo(() => {

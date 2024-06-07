@@ -1,1 +1,1 @@
-export { useFormattedMessage } from 'use-react-intl-formatters';
+export { useFormattedMessage } from "use-react-intl-formatters";

@@ -3,4 +3,4 @@ export {
   useFormattedDate,
   useFormattedTime,
   useIntlFormatters,
-} from './hooks';
+} from "./hooks";

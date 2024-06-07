@@ -22,7 +22,7 @@ npm install --save use-react-intl-formatters
 ## Usage
 
 ```js
-import useReactIntlFormatters from 'use-react-intl-formatters';
+import useReactIntlFormatters from "use-react-intl-formatters";
 
 console.log(useReactIntlFormatters);
 ```
