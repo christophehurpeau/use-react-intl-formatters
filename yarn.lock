@@ -2497,9 +2497,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pob/root@npm:11.1.0":
-  version: 11.1.0
-  resolution: "@pob/root@npm:11.1.0"
+"@pob/root@npm:12.1.1":
+  version: 12.1.1
+  resolution: "@pob/root@npm:12.1.1"
   dependencies:
     "@commitlint/cli": "npm:19.3.0"
     "@pob/pretty-eslint-config": "npm:6.0.0"
@@ -2509,12 +2509,12 @@ __metadata:
     husky: "npm:~9.0.11"
     json5: "npm:^2.2.2"
     lint-staged: "npm:15.2.5"
-    pob-dependencies: "npm:12.0.0"
+    pob-dependencies: "npm:13.1.0"
     prettier: "npm:3.3.1"
     repository-check-dirty: "npm:7.0.0"
     semver: "npm:^7.3.7"
     which-pm-runs: "npm:1.1.0"
-    yarn-version: "npm:1.1.0"
+    yarn-version: "npm:2.1.1"
   bin:
     commitlint: ./bin/commitlint.js
     pob-root-lint-staged: ./bin/pob-root-lint-staged.js
@@ -2525,7 +2525,7 @@ __metadata:
     pretty-pkg: ./bin/pretty-pkg.js
     repository-check-dirty: ./bin/repository-check-dirty.js
     yarn-version: ./bin/yarn-version.js
-  checksum: 10c0/6f9b61efeabbd31bc4e885e6a0c19430e0d9225a13f676e57277c08e6924ba687bbc6c991cb427a2ae6bae34273f4af4e1ea0a467b27bc7113c816698d0537e3
+  checksum: 10c0/c7f091c425720934a8335284d32a4a01668e2d7c3326791e0c4570e0c1477f0ac01dc3783e915d823f3fef0a42d7a1d12a0b25d6febb0693327839cb5754fe6c
   languageName: node
   linkType: hard
 
@@ -7864,10 +7864,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pob-dependencies@npm:12.0.0":
-  version: 12.0.0
-  resolution: "pob-dependencies@npm:12.0.0"
-  checksum: 10c0/73db5149a066690f94ddb4f7186336595404b4f352322f49463e8436e776a108c90df28fd9e41e9afec0c5c642820d2e016915c86ccec2ea0c537819cf19c6bf
+"pob-dependencies@npm:13.1.0":
+  version: 13.1.0
+  resolution: "pob-dependencies@npm:13.1.0"
+  checksum: 10c0/f1bacbd9f3dea195dfb0d113aa390a9f9e69bce8a5623a51eb705e965b7ecea30685b2a6051ab169998b3db0bfcfa2f3bb8ed4010414f3472f9ff46119d0ca38
   languageName: node
   linkType: hard
 
@@ -9271,7 +9271,7 @@ __metadata:
     "@pob/eslint-config": "npm:56.0.0"
     "@pob/eslint-config-typescript": "npm:56.0.0"
     "@pob/eslint-config-typescript-react": "npm:56.0.0"
-    "@pob/root": "npm:11.1.0"
+    "@pob/root": "npm:12.1.1"
     "@types/jest": "npm:29.5.12"
     check-package-dependencies: "npm:7.1.2"
     eslint: "npm:8.57.0"
@@ -9542,9 +9542,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yarn-version@npm:1.1.0":
-  version: 1.1.0
-  resolution: "yarn-version@npm:1.1.0"
+"yarn-version@npm:2.1.1":
+  version: 2.1.1
+  resolution: "yarn-version@npm:2.1.1"
   dependencies:
     "@conventional-changelog/git-client": "npm:1.0.1"
     "@npmcli/map-workspaces": "npm:3.0.6"
@@ -9563,7 +9563,7 @@ __metadata:
     semver: "npm:7.6.2"
   bin:
     yarn-version: ./build/index-node18.mjs
-  checksum: 10c0/56ca6ad2a320eaccb43c41dcfeb94cc3d7db3dbe0715ae48cae3bafada4dd8ac4218019427a8eb646c79be2fe6e929344213170a4e8b5ac1a814fabc5299b502
+  checksum: 10c0/0a47639fe3f98ee419dc86f2ce485f0345d3f0d57f9d18ca77af4f46cfa09f847296f9d54b97a1415badb251d74f5e9c1424f7ca6dfec36494773a92ef44ee14
   languageName: node
   linkType: hard
 
