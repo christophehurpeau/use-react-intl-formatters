@@ -83,9 +83,9 @@
     "@babel/core": "7.24.7",
     "@babel/preset-env": "7.24.7",
     "@babel/preset-react": "7.24.7",
-    "@types/react": "18.3.1",
+    "@types/react": "18.3.3",
     "pob-babel": "39.0.0",
-    "react": "18.3.0",
+    "react": "18.3.1",
     "react-intl": "6.6.8",
     "typescript": "5.5.3"
   }
