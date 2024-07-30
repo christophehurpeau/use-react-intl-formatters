@@ -80,8 +80,8 @@
     "use-react-intl-formatters": "5.0.4"
   },
   "devDependencies": {
-    "@babel/core": "7.24.9",
-    "@babel/preset-env": "7.25.0",
+    "@babel/core": "7.25.2",
+    "@babel/preset-env": "7.25.2",
     "@babel/preset-react": "7.24.7",
     "@types/react": "18.3.3",
     "pob-babel": "39.0.0",
