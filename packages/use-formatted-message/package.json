@@ -83,7 +83,7 @@
     "@babel/core": "7.25.9",
     "@babel/preset-env": "7.25.9",
     "@babel/preset-react": "7.25.9",
-    "@types/react": "18.3.11",
+    "@types/react": "18.3.12",
     "pob-babel": "41.1.0",
     "react": "18.3.1",
     "react-intl": "6.7.0",
