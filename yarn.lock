@@ -1395,13 +1395,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/config-conventional@npm:^19.2.2":
-  version: 19.2.2
-  resolution: "@commitlint/config-conventional@npm:19.2.2"
+"@commitlint/config-conventional@npm:^19.7.1":
+  version: 19.7.1
+  resolution: "@commitlint/config-conventional@npm:19.7.1"
   dependencies:
-    "@commitlint/types": "npm:^19.0.3"
+    "@commitlint/types": "npm:^19.5.0"
     conventional-changelog-conventionalcommits: "npm:^7.0.2"
-  checksum: 10c0/2f2a07ee318ac42ffda488521bd84f28268a6d2ea10b332abcad6106559d8a64a765cc58ddea106fd67fce376228cb24059000a584f4986e0e8f972cedd85442
+  checksum: 10c0/9de7e5f1e4ac1d995293da12a646936d477c4fc50562de015df26e0b307ebf3fd2632dc8c874ba9d9a81c9540c3189e275fb6fe0b707ae6c9159c013b7dfdb56
   languageName: node
   linkType: hard
 
@@ -1559,7 +1559,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/types@npm:^19.0.3, @commitlint/types@npm:^19.5.0":
+"@commitlint/types@npm:^19.5.0":
   version: 19.5.0
   resolution: "@commitlint/types@npm:19.5.0"
   dependencies:
@@ -2367,12 +2367,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pob/commitlint-config@npm:8.0.1":
-  version: 8.0.1
-  resolution: "@pob/commitlint-config@npm:8.0.1"
+"@pob/commitlint-config@npm:9.1.1":
+  version: 9.1.1
+  resolution: "@pob/commitlint-config@npm:9.1.1"
   dependencies:
-    "@commitlint/config-conventional": "npm:^19.2.2"
-  checksum: 10c0/99d9ac14e3817832cab29497557ddd3bfadbb6583231a6edd06d71b17f2950abf155e0920be760cc963903918010feb9d53a47aef8d7abb58196d728d32603a8
+    "@commitlint/config-conventional": "npm:^19.7.1"
+  checksum: 10c0/51b0bac9a414e009477ad9f0cb7e58d43af72b57a71ca63644616d0bf967d676dd68e32f91d5920c8a27badfab9aa0a482fbc01410570a8879873b53b282e604
   languageName: node
   linkType: hard
 
@@ -9633,7 +9633,7 @@ __metadata:
   resolution: "use-react-intl-formatters-monorepo@workspace:."
   dependencies:
     "@babel/core": "npm:7.26.9"
-    "@pob/commitlint-config": "npm:8.0.1"
+    "@pob/commitlint-config": "npm:9.1.1"
     "@pob/eslint-config": "npm:58.1.0"
     "@pob/eslint-config-typescript": "npm:58.1.0"
     "@pob/eslint-config-typescript-react": "npm:58.1.0"
