@@ -1,5 +1,5 @@
 import { useCallback, useMemo } from "react";
-import type { IntlShape } from "react-intl";
+import type { IntlShape, MessageDescriptor } from "react-intl";
 import { useIntl } from "react-intl";
 
 /* formatters */
@@ -42,16 +42,14 @@ export function useIntlFormatters(): UseIntlFormatters {
 
 type FormatMessageParameters = Parameters<IntlShape["formatMessage"]>;
 
+export function useFormattedMessage(descriptor: MessageDescriptor): string;
 export function useFormattedMessage(
-  descriptor: FormatMessageParameters[0],
-): string;
-export function useFormattedMessage(
-  descriptor: FormatMessageParameters[0],
+  descriptor: MessageDescriptor,
   values: FormatMessageParameters[1],
   deps: unknown[],
 ): NonNullable<ReturnType<IntlShape["formatMessage"]>>;
 export function useFormattedMessage(
-  descriptor: FormatMessageParameters[0],
+  descriptor: MessageDescriptor,
   values?: FormatMessageParameters[1],
   deps: unknown[] = [],
 ): ReturnType<IntlShape["formatMessage"]> {

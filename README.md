@@ -1,8 +1,8 @@
-<h3 align="center">
-  use-react-intl-formatters-monorepo
-</h3>
+<h1 align="center">
+  
+</h1>
 
-<h1>Packages</h1>
+<h3>📦 Packages</h3>
 
 This repository is a monorepo that we manage using [Yarn Workspaces](https://yarnpkg.com/features/workspaces).
 

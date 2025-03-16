@@ -17,6 +17,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
+          check-latest: true
           registry-url: "https://registry.npmjs.org"
 
       - name: Enable Corepack
@@ -27,6 +28,7 @@ jobs:
 
       - name: Checks
         run: yarn run checks
+        if: startsWith(matrix.node-version, '22.')
 
       - name: Build
         run: yarn run build
@@ -59,4 +61,4 @@ jobs:
         with:
           fail_ci_if_error: true
           token: ${{ secrets.CODECOV_TOKEN }}
-        if: startsWith(matrix.node-version, '22.')
+        if: startsWith(matrix.node-version, '22.') && github.actor != 'dependabot[bot]'

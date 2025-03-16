@@ -74,4 +74,4 @@ function useFormattedTime(value, {
 }
 
 export { useFormattedDate, useFormattedMessage, useFormattedTime, useIntlFormatters };
-//# sourceMappingURL=index-node18.mjs.map
+//# sourceMappingURL=index-node20.mjs.map

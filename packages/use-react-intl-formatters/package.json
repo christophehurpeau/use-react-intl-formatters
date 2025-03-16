@@ -13,17 +13,17 @@
   "homepage": "https://github.com/christophehurpeau/use-react-intl-formatters",
   "type": "module",
   "engines": {
-    "node": ">=18.12.0"
+    "node": ">=20.9.0"
   },
   "sideEffects": false,
-  "main": "./dist/index-node18.mjs",
+  "main": "./dist/index-node20.mjs",
   "types": "./dist/definitions/index.d.ts",
   "exports": {
     "./package.json": "./package.json",
     ".": {
       "types": "./dist/definitions/index.d.ts",
       "node": {
-        "import": "./dist/index-node18.mjs"
+        "import": "./dist/index-node20.mjs"
       }
     }
   },
@@ -49,7 +49,7 @@
     "envs": [
       {
         "target": "node",
-        "version": "18"
+        "version": "20"
       }
     ]
   },
@@ -59,10 +59,10 @@
     "react-intl": "^4.0.0 || ^5.0.0 || ^6.0.0"
   },
   "devDependencies": {
-    "@babel/core": "7.26.9",
-    "pob-babel": "42.0.0",
+    "@babel/core": "7.26.10",
+    "pob-babel": "43.4.0",
     "react": "18.3.1",
     "react-intl": "6.7.0",
-    "typescript": "5.7.3"
+    "typescript": "5.8.2"
   }
 }

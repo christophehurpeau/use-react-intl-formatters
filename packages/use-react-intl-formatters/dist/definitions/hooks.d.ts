@@ -1,4 +1,4 @@
-import type { IntlShape } from "react-intl";
+import type { IntlShape, MessageDescriptor } from "react-intl";
 interface UseIntlFormatters {
     formatMessage: IntlShape["formatMessage"];
     formatDate: (value: FormatDateParameters[0], { format, timeZone }: UseFormattedDateOptions) => ReturnType<IntlShape["formatDate"]>;
@@ -6,8 +6,8 @@ interface UseIntlFormatters {
 }
 export declare function useIntlFormatters(): UseIntlFormatters;
 type FormatMessageParameters = Parameters<IntlShape["formatMessage"]>;
-export declare function useFormattedMessage(descriptor: FormatMessageParameters[0]): string;
-export declare function useFormattedMessage(descriptor: FormatMessageParameters[0], values: FormatMessageParameters[1], deps: unknown[]): NonNullable<ReturnType<IntlShape["formatMessage"]>>;
+export declare function useFormattedMessage(descriptor: MessageDescriptor): string;
+export declare function useFormattedMessage(descriptor: MessageDescriptor, values: FormatMessageParameters[1], deps: unknown[]): NonNullable<ReturnType<IntlShape["formatMessage"]>>;
 type IntlDateFormat = string;
 type FormatDateParameters = Parameters<IntlShape["formatDate"]>;
 export interface UseFormattedDateOptions {
