@@ -73,7 +73,7 @@
   },
   "prettier": "@pob/root/prettier-config",
   "peerDependencies": {
-    "react": "^16.0.0 || ^17.0.0 || ^18.0.0",
+    "react": "^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
     "react-intl": "^4.0.0 || ^5.0.0 || ^6.0.0"
   },
   "dependencies": {
@@ -83,9 +83,9 @@
     "@babel/core": "7.26.10",
     "@babel/preset-env": "7.26.9",
     "@babel/preset-react": "7.26.3",
-    "@types/react": "18.3.20",
+    "@types/react": "19.1.0",
     "pob-babel": "43.4.0",
-    "react": "18.3.1",
+    "react": "19.1.0",
     "react-intl": "6.7.0",
     "typescript": "5.8.3"
   }
