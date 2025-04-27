@@ -6,7 +6,7 @@ import { useIntl } from 'react-intl';
 function useIntlFormatters() {
   const intl = useIntl();
   const formatMessage = useCallback(
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-return
   (descriptor, values) => intl.formatMessage(descriptor, values), [intl]);
   const formatDate = useCallback((value, {
     format,
