@@ -1,13 +1,16 @@
-import type { IntlShape } from "react-intl";
+import type { FormatXMLElementFn, Options as IntlMessageFormatOptions, PrimitiveType } from "intl-messageformat";
+import type { ReactNode } from "react";
+import type { IntlShape, MessageDescriptor } from "react-intl";
 interface UseIntlFormatters {
-    formatMessage: IntlShape["formatMessage"];
+    formatMessage(descriptor: MessageDescriptor, values?: Record<string, FormatXMLElementFn<string, string> | PrimitiveType>, opts?: IntlMessageFormatOptions): string;
+    formatMessage(descriptor: MessageDescriptor, values?: Record<string, FormatXMLElementFn<string, ReactNode> | PrimitiveType | ReactNode>, opts?: IntlMessageFormatOptions): ReactNode[];
     formatDate: (value: FormatDateParameters[0], { format, timeZone }: UseFormattedDateOptions) => ReturnType<IntlShape["formatDate"]>;
     formatTime: (value: FormatDateParameters[0], { format, timeZone }: UseFormattedTimeOptions) => ReturnType<IntlShape["formatTime"]>;
 }
 export declare function useIntlFormatters(): UseIntlFormatters;
-type FormatMessageParameters = Parameters<IntlShape["formatMessage"]>;
-export declare function useFormattedMessage(descriptor: FormatMessageParameters[0]): string;
-export declare function useFormattedMessage(descriptor: FormatMessageParameters[0], values: FormatMessageParameters[1], deps: unknown[]): NonNullable<ReturnType<IntlShape["formatMessage"]>>;
+export declare function useFormattedMessage(descriptor: MessageDescriptor): string;
+export declare function useFormattedMessage(descriptor: MessageDescriptor, values?: Record<string, FormatXMLElementFn<string, string> | PrimitiveType>, deps?: unknown[]): string;
+export declare function useFormattedMessage(descriptor: MessageDescriptor, values?: Record<string, FormatXMLElementFn<string, ReactNode> | PrimitiveType | ReactNode>, deps?: unknown[]): ReactNode[];
 type IntlDateFormat = string;
 type FormatDateParameters = Parameters<IntlShape["formatDate"]>;
 export interface UseFormattedDateOptions {

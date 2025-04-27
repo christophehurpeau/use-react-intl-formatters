@@ -1,11 +1,32 @@
+import type {
+  FormatXMLElementFn,
+  Options as IntlMessageFormatOptions,
+  PrimitiveType,
+} from "intl-messageformat";
+import type { ReactNode } from "react";
 import { useCallback, useMemo } from "react";
-import type { IntlShape } from "react-intl";
+import type { IntlShape, MessageDescriptor } from "react-intl";
 import { useIntl } from "react-intl";
 
 /* formatters */
 
 interface UseIntlFormatters {
-  formatMessage: IntlShape["formatMessage"];
+  // eslint-disable-next-line @typescript-eslint/method-signature-style
+  formatMessage(
+    descriptor: MessageDescriptor,
+    values?: Record<string, FormatXMLElementFn<string, string> | PrimitiveType>,
+    opts?: IntlMessageFormatOptions,
+  ): string;
+  // eslint-disable-next-line @typescript-eslint/method-signature-style
+  formatMessage(
+    descriptor: MessageDescriptor,
+    values?: Record<
+      string,
+      FormatXMLElementFn<string, ReactNode> | PrimitiveType | ReactNode
+    >,
+    opts?: IntlMessageFormatOptions,
+  ): ReactNode[];
+
   formatDate: (
     value: FormatDateParameters[0],
     { format, timeZone }: UseFormattedDateOptions,
@@ -20,8 +41,8 @@ export function useIntlFormatters(): UseIntlFormatters {
   const intl = useIntl();
 
   const formatMessage = useCallback<UseIntlFormatters["formatMessage"]>(
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
-    (descriptor: any, values: any) => intl.formatMessage(descriptor, values),
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-return
+    (descriptor, values) => intl.formatMessage(descriptor, values) as any,
     [intl],
   );
   const formatDate = useCallback<UseIntlFormatters["formatDate"]>(
@@ -42,19 +63,25 @@ export function useIntlFormatters(): UseIntlFormatters {
 
 type FormatMessageParameters = Parameters<IntlShape["formatMessage"]>;
 
+export function useFormattedMessage(descriptor: MessageDescriptor): string;
 export function useFormattedMessage(
-  descriptor: FormatMessageParameters[0],
+  descriptor: MessageDescriptor,
+  values?: Record<string, FormatXMLElementFn<string, string> | PrimitiveType>,
+  deps?: unknown[],
 ): string;
 export function useFormattedMessage(
-  descriptor: FormatMessageParameters[0],
-  values: FormatMessageParameters[1],
-  deps: unknown[],
-): NonNullable<ReturnType<IntlShape["formatMessage"]>>;
+  descriptor: MessageDescriptor,
+  values?: Record<
+    string,
+    FormatXMLElementFn<string, ReactNode> | PrimitiveType | ReactNode
+  >,
+  deps?: unknown[],
+): ReactNode[];
 export function useFormattedMessage(
-  descriptor: FormatMessageParameters[0],
+  descriptor: MessageDescriptor,
   values?: FormatMessageParameters[1],
   deps: unknown[] = [],
-): ReturnType<IntlShape["formatMessage"]> {
+): ReactNode[] | string {
   const intlFormatters = useIntlFormatters();
   return useMemo(() => {
     return intlFormatters.formatMessage(descriptor, values);
