@@ -40,8 +40,8 @@
   },
   "prettier": "@pob/root/prettier-config",
   "devDependencies": {
-    "@babel/core": "7.26.10",
-    "@babel/preset-react": "7.26.3",
+    "@babel/core": "7.27.1",
+    "@babel/preset-react": "7.27.1",
     "@pob/commitlint-config": "9.1.4",
     "@pob/eslint-config": "59.8.1",
     "@pob/eslint-config-typescript": "59.8.1",
