@@ -3005,7 +3005,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:16 || 17 || 18, @types/react@npm:18.3.23":
+"@types/react@npm:*, @types/react@npm:19.1.8":
+  version: 19.1.8
+  resolution: "@types/react@npm:19.1.8"
+  dependencies:
+    csstype: "npm:^3.0.2"
+  checksum: 10c0/4908772be6dc941df276931efeb0e781777fa76e4d5d12ff9f75eb2dcc2db3065e0100efde16fde562c5bafa310cc8f50c1ee40a22640459e066e72cd342143e
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:16 || 17 || 18":
   version: 18.3.23
   resolution: "@types/react@npm:18.3.23"
   dependencies:
@@ -7220,7 +7229,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loose-envify@npm:^1.1.0, loose-envify@npm:^1.4.0":
+"loose-envify@npm:^1.4.0":
   version: 1.4.0
   resolution: "loose-envify@npm:1.4.0"
   dependencies:
@@ -8357,12 +8366,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:18.3.1":
-  version: 18.3.1
-  resolution: "react@npm:18.3.1"
-  dependencies:
-    loose-envify: "npm:^1.1.0"
-  checksum: 10c0/283e8c5efcf37802c9d1ce767f302dd569dd97a70d9bb8c7be79a789b9902451e0d16334b05d73299b20f048cbc3c7d288bbbde10b701fa194e2089c237dbea3
+"react@npm:19.1.0":
+  version: 19.1.0
+  resolution: "react@npm:19.1.0"
+  checksum: 10c0/530fb9a62237d54137a13d2cfb67a7db6a2156faed43eecc423f4713d9b20c6f2728b026b45e28fcd72e8eadb9e9ed4b089e99f5e295d2f0ad3134251bdd3698
   languageName: node
   linkType: hard
 
@@ -9697,14 +9704,14 @@ __metadata:
     "@babel/core": "npm:7.27.4"
     "@babel/preset-env": "npm:7.27.2"
     "@babel/preset-react": "npm:7.27.1"
-    "@types/react": "npm:18.3.23"
+    "@types/react": "npm:19.1.8"
     pob-babel: "npm:43.6.1"
-    react: "npm:18.3.1"
+    react: "npm:19.1.0"
     react-intl: "npm:7.0.1"
     typescript: "npm:5.8.3"
     use-react-intl-formatters: "npm:5.0.4"
   peerDependencies:
-    react: ^16.0.0 || ^17.0.0 || ^18.0.0
+    react: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
     react-intl: ^7.0.0
   languageName: unknown
   linkType: soft
@@ -9736,11 +9743,11 @@ __metadata:
   dependencies:
     "@babel/core": "npm:7.27.4"
     pob-babel: "npm:43.6.1"
-    react: "npm:18.3.1"
+    react: "npm:19.1.0"
     react-intl: "npm:7.0.1"
     typescript: "npm:5.8.3"
   peerDependencies:
-    react: ^16.0.0 || ^17.0.0 || ^18.0.0
+    react: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
     react-intl: ^7.0.0
   languageName: unknown
   linkType: soft
