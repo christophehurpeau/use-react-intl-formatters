@@ -40,7 +40,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:7.28.3, @babel/core@npm:^7.11.6, @babel/core@npm:^7.12.3, @babel/core@npm:^7.27.7":
+"@babel/core@npm:7.28.3, @babel/core@npm:^7.11.6, @babel/core@npm:^7.12.3, @babel/core@npm:^7.28.0":
   version: 7.28.3
   resolution: "@babel/core@npm:7.28.3"
   dependencies:
@@ -128,7 +128,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/helper-define-polyfill-provider@npm:^0.6.3, @babel/helper-define-polyfill-provider@npm:^0.6.5":
+"@babel/helper-define-polyfill-provider@npm:^0.6.5":
   version: 0.6.5
   resolution: "@babel/helper-define-polyfill-provider@npm:0.6.5"
   dependencies:
@@ -1091,19 +1091,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-runtime@npm:7.27.4":
-  version: 7.27.4
-  resolution: "@babel/plugin-transform-runtime@npm:7.27.4"
+"@babel/plugin-transform-runtime@npm:7.28.3":
+  version: 7.28.3
+  resolution: "@babel/plugin-transform-runtime@npm:7.28.3"
   dependencies:
     "@babel/helper-module-imports": "npm:^7.27.1"
     "@babel/helper-plugin-utils": "npm:^7.27.1"
-    babel-plugin-polyfill-corejs2: "npm:^0.4.10"
-    babel-plugin-polyfill-corejs3: "npm:^0.11.0"
-    babel-plugin-polyfill-regenerator: "npm:^0.6.1"
+    babel-plugin-polyfill-corejs2: "npm:^0.4.14"
+    babel-plugin-polyfill-corejs3: "npm:^0.13.0"
+    babel-plugin-polyfill-regenerator: "npm:^0.6.5"
     semver: "npm:^6.3.1"
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: 10c0/7d4683410b8d04483e666baf150faeefa6525acf9c53c8631d9bb7c49271fabe4817dad6284a7a8c54c92ce1f24a69cd62f56782bb9bd35135c9933b1c5362ed
+  checksum: 10c0/561629bb6c53561b5ad470df2e76bdd15e177fc518d91087bd7dc64a1025e42303ce333281875c6f0c7bf29b2edc7d99945343a09caf0ed6738d25fe34473254
   languageName: node
   linkType: hard
 
@@ -3671,7 +3671,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-polyfill-corejs2@npm:^0.4.10, babel-plugin-polyfill-corejs2@npm:^0.4.14":
+"babel-plugin-polyfill-corejs2@npm:^0.4.14":
   version: 0.4.14
   resolution: "babel-plugin-polyfill-corejs2@npm:0.4.14"
   dependencies:
@@ -3681,18 +3681,6 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.4.0 || ^8.0.0-0 <8.0.0
   checksum: 10c0/d74cba0600a6508e86d220bde7164eb528755d91be58020e5ea92ea7fbb12c9d8d2c29246525485adfe7f68ae02618ec428f9a589cac6cbedf53cc3972ad7fbe
-  languageName: node
-  linkType: hard
-
-"babel-plugin-polyfill-corejs3@npm:^0.11.0":
-  version: 0.11.1
-  resolution: "babel-plugin-polyfill-corejs3@npm:0.11.1"
-  dependencies:
-    "@babel/helper-define-polyfill-provider": "npm:^0.6.3"
-    core-js-compat: "npm:^3.40.0"
-  peerDependencies:
-    "@babel/core": ^7.4.0 || ^8.0.0-0 <8.0.0
-  checksum: 10c0/025f754b6296d84b20200aff63a3c1acdd85e8c621781f2bd27fe2512d0060526192d02329326947c6b29c27cf475fbcfaaff8c51eab1d2bfc7b79086bb64229
   languageName: node
   linkType: hard
 
@@ -3708,7 +3696,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-polyfill-regenerator@npm:^0.6.1, babel-plugin-polyfill-regenerator@npm:^0.6.5":
+"babel-plugin-polyfill-regenerator@npm:^0.6.5":
   version: 0.6.5
   resolution: "babel-plugin-polyfill-regenerator@npm:0.6.5"
   dependencies:
@@ -3781,9 +3769,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-preset-pob-env@npm:15.3.0":
-  version: 15.3.0
-  resolution: "babel-preset-pob-env@npm:15.3.0"
+"babel-preset-pob-env@npm:15.4.0":
+  version: 15.4.0
+  resolution: "babel-preset-pob-env@npm:15.4.0"
   dependencies:
     "@babel/plugin-transform-modules-commonjs": "npm:^7.27.1"
     "@babel/preset-typescript": "npm:^7.27.1"
@@ -3792,7 +3780,7 @@ __metadata:
     babel-preset-optimizations: "npm:^2.0.0"
   peerDependencies:
     "@babel/core": ^7.23.2
-  checksum: 10c0/e408d5a05ae155a8fd3bef882fca1d1bdc1e10d6bc7cad28409f1e4bc227698731e98e1bae4af714ff3e5100033627e612aba9bc72d29d01299d7c48a5666f17
+  checksum: 10c0/28a0ab3e8fdf74de24c74e44a07ff8b80610f69eeed5cfec90f6d9c812754150e147ce9b36e310fc1b8a1d40ea0633244de0cde2e9c70a707fcdb4566d9c922b
   languageName: node
   linkType: hard
 
@@ -8198,23 +8186,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pob-babel@npm:43.7.0":
-  version: 43.7.0
-  resolution: "pob-babel@npm:43.7.0"
+"pob-babel@npm:43.8.0":
+  version: 43.8.0
+  resolution: "pob-babel@npm:43.8.0"
   dependencies:
-    "@babel/core": "npm:^7.27.7"
-    "@babel/plugin-transform-runtime": "npm:7.27.4"
+    "@babel/core": "npm:^7.28.0"
+    "@babel/plugin-transform-runtime": "npm:7.28.3"
     "@pob/rollup": "npm:6.3.0"
     "@rollup/plugin-babel": "npm:6.0.4"
     "@rollup/plugin-json": "npm:6.1.0"
     "@rollup/plugin-node-resolve": "npm:16.0.1"
     "@rollup/plugin-run": "npm:3.1.0"
-    babel-preset-pob-env: "npm:15.3.0"
+    babel-preset-pob-env: "npm:15.4.0"
     rollup: "npm:4.44.1"
     rollup-config-external-dependencies: "npm:^3.0.1"
     semver: "npm:^7.3.7"
   peerDependencies:
-    "@babel/core": ^7.27.7
+    "@babel/core": ^7.28.0
     rollup: 4.44.1
     typescript: ^4.0.3 || ^5.0.0
   peerDependenciesMeta:
@@ -8223,7 +8211,7 @@ __metadata:
   bin:
     pob-babel-clean-out: ./bin/pob-babel-clean-out.js
     rollup: ./bin/rollup.cjs
-  checksum: 10c0/fcf187d053a946ad71612c3014458be0731873fc339e97e7b06f20bcda1fe00be6e11f4849f599b1565b1ee0d699f7a4e634e3a1784488bc90ade1aa544e9b9c
+  checksum: 10c0/d0c3e8941312c0e6bf126863a18c3a429b029434465b8155b2c7bb846660649c04f2d0d2d61d2ecc976d1fa71ffde1c7ba386e369a2c19a8077145e8681acd7f
   languageName: node
   linkType: hard
 
@@ -9717,7 +9705,7 @@ __metadata:
     "@babel/preset-env": "npm:7.28.3"
     "@babel/preset-react": "npm:7.27.1"
     "@types/react": "npm:18.3.24"
-    pob-babel: "npm:43.7.0"
+    pob-babel: "npm:43.8.0"
     react: "npm:18.3.1"
     react-intl: "npm:7.0.1"
     typescript: "npm:5.9.2"
@@ -9743,7 +9731,7 @@ __metadata:
     check-package-dependencies: "npm:10.4.1"
     eslint: "npm:9.34.0"
     jest: "npm:29.7.0"
-    pob-babel: "npm:43.7.0"
+    pob-babel: "npm:43.8.0"
     typedoc: "npm:0.28.10"
     typescript: "npm:5.9.2"
   languageName: unknown
@@ -9754,7 +9742,7 @@ __metadata:
   resolution: "use-react-intl-formatters@workspace:packages/use-react-intl-formatters"
   dependencies:
     "@babel/core": "npm:7.28.3"
-    pob-babel: "npm:43.7.0"
+    pob-babel: "npm:43.8.0"
     react: "npm:18.3.1"
     react-intl: "npm:7.0.1"
     typescript: "npm:5.9.2"
