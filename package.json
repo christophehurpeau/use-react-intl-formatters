@@ -7,7 +7,7 @@
   "repository": "https://github.com/christophehurpeau/use-react-intl-formatters.git",
   "homepage": "https://github.com/christophehurpeau/use-react-intl-formatters",
   "type": "module",
-  "packageManager": "yarn@4.9.2",
+  "packageManager": "yarn@4.9.3",
   "engines": {
     "node": ">=20.9.0"
   },
