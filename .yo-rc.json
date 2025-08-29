@@ -1,21 +1,24 @@
 {
   "pob": {
-    "project": {
-      "type": "lib",
-      "packageManager": "yarn",
-      "yarnNodeLinker": "node-modules"
-    },
     "renovate": {
       "enable": true
     },
     "monorepo": {
       "ci": true,
       "testing": true,
+      "testRunner": "node",
       "codecov": true,
       "documentation": true,
       "typescript": true,
       "eslint": true,
       "packageNames": ["use-react-intl-formatters", "use-formatted-message"]
+    },
+    "project": {
+      "type": "lib",
+      "packageManager": "yarn",
+      "yarnNodeLinker": "node-modules",
+      "onlyLatestLTS": true,
+      "ci": true
     }
   }
 }

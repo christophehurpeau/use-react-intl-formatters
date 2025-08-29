@@ -11,7 +11,7 @@
   <a href="https://npmjs.org/package/use-formatted-message"><img src="https://img.shields.io/npm/dw/use-formatted-message.svg?style=flat-square" alt="npm downloads"></a>
   <a href="https://npmjs.org/package/use-formatted-message"><img src="https://img.shields.io/node/v/use-formatted-message.svg?style=flat-square" alt="node version"></a>
   <a href="https://npmjs.org/package/use-formatted-message"><img src="https://img.shields.io/npm/types/use-formatted-message.svg?style=flat-square" alt="types"></a>
-  <a href="https://codecov.io/gh/christophehurpeau/use-react-intl-formatters"><img src="https://img.shields.io/codecov/c/github/christophehurpeau/use-react-intl-formatters/master.svg?style=flat-square"></a>
+  <a href="https://codecov.io/gh/christophehurpeau/use-react-intl-formatters"><img src="https://img.shields.io/codecov/c/github/christophehurpeau/use-react-intl-formatters/main.svg?style=flat-square"></a>
 </p>
 
 ## Install
