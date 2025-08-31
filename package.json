@@ -47,7 +47,7 @@
     "@pob/rollup-esbuild": "6.7.0",
     "@pob/root": "18.3.0",
     "@types/node": "22.15.2",
-    "check-package-dependencies": "10.3.0",
+    "check-package-dependencies": "10.4.1",
     "eslint": "9.30.0",
     "typedoc": "0.28.11",
     "typescript": "5.9.2"
