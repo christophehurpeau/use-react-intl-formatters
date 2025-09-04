@@ -46,7 +46,7 @@
     "@pob/eslint-config-typescript-react": "61.1.0",
     "@pob/rollup-esbuild": "6.7.0",
     "@pob/root": "18.3.0",
-    "@types/node": "22.15.2",
+    "@types/node": "22.18.1",
     "check-package-dependencies": "10.3.0",
     "eslint": "9.30.0",
     "typedoc": "0.28.11",
