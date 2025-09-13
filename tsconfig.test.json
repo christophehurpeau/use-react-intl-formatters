@@ -1,7 +1,0 @@
-{
-  "files": [],
-  "references": [
-    { "path": "packages/use-react-intl-formatters/tsconfig.test.json" },
-    { "path": "packages/use-formatted-message/tsconfig.test.json" }
-  ]
-}
