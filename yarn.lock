@@ -1430,13 +1430,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:16 || 17 || 18, @types/react@npm:18.3.20":
-  version: 18.3.20
-  resolution: "@types/react@npm:18.3.20"
+"@types/react@npm:*, @types/react@npm:16 || 17 || 18, @types/react@npm:18.3.24":
+  version: 18.3.24
+  resolution: "@types/react@npm:18.3.24"
   dependencies:
     "@types/prop-types": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 10c0/65fa867c91357e4c4c646945c8b99044360f8973cb7f928ec4de115fe3207827985d45be236e6fd6c092b09f631c2126ce835c137be30718419e143d73300d8f
+  checksum: 10c0/9e188fa8e50f172cf647fc48fea2e04d88602afff47190b697de281a8ac88df9ee059864757a2a438ff599eaf9276d9a9e0e60585e88f7d57f01a2e4877d37ec
   languageName: node
   linkType: hard
 
@@ -6645,7 +6645,7 @@ __metadata:
   dependencies:
     "@pob/rollup-esbuild": "npm:7.0.0"
     "@types/node": "npm:22.15.2"
-    "@types/react": "npm:18.3.20"
+    "@types/react": "npm:18.3.24"
     react: "npm:18.3.1"
     react-intl: "npm:7.0.1"
     typescript: "npm:5.9.2"
