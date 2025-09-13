@@ -1,6 +1,6 @@
 {
   "name": "use-formatted-message",
-  "version": "6.0.0",
+  "version": "6.0.1",
   "description": "react-intl formatted message hook with use memo",
   "keywords": [],
   "author": "Christophe Hurpeau <christophe@hurpeau.com> (https://christophe.hurpeau.com)",
@@ -78,7 +78,7 @@
     "react-intl": "^7.0.0"
   },
   "dependencies": {
-    "use-react-intl-formatters": "6.0.0"
+    "use-react-intl-formatters": "6.0.1"
   },
   "devDependencies": {
     "@pob/rollup-esbuild": "7.0.0",

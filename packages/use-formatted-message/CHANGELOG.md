@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.1](https://github.com/christophehurpeau/use-react-intl-formatters/compare/v6.0.0...v6.0.1) (2025-09-13)
+
+### Bug Fixes
+
+* allow react 19 ([cae24c2](https://github.com/christophehurpeau/use-react-intl-formatters/commit/cae24c2deeb523222552558f58bda278fe841064))
+
+Version bump for dependency: use-react-intl-formatters
+
+
 ## [6.0.0](https://github.com/christophehurpeau/use-react-intl-formatters/compare/v5.0.4...v6.0.0) (2025-09-13)
 
 ### ⚠ BREAKING CHANGES
