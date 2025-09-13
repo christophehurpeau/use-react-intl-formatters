@@ -6651,7 +6651,7 @@ __metadata:
     typescript: "npm:5.9.2"
     use-react-intl-formatters: "npm:6.0.0"
   peerDependencies:
-    react: ^16.0.0 || ^17.0.0 || ^18.0.0
+    react: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
     react-intl: ^7.0.0
   languageName: unknown
   linkType: soft
@@ -6684,7 +6684,7 @@ __metadata:
     react-intl: "npm:7.0.1"
     typescript: "npm:5.9.2"
   peerDependencies:
-    react: ^16.0.0 || ^17.0.0 || ^18.0.0
+    react: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
     react-intl: ^7.0.0
   languageName: unknown
   linkType: soft
