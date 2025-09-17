@@ -81,7 +81,7 @@
     "use-react-intl-formatters": "6.0.1"
   },
   "devDependencies": {
-    "@pob/rollup-esbuild": "7.0.0",
+    "@pob/rollup-esbuild": "7.1.0",
     "@types/node": "22.18.5",
     "@types/react": "18.3.24",
     "react": "18.3.1",
