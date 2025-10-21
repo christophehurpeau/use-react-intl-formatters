@@ -1338,12 +1338,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:22.18.11, @types/node@npm:>=20.0.0":
-  version: 22.18.11
-  resolution: "@types/node@npm:22.18.11"
+"@types/node@npm:*, @types/node@npm:22.18.12, @types/node@npm:>=20.0.0":
+  version: 22.18.12
+  resolution: "@types/node@npm:22.18.12"
   dependencies:
     undici-types: "npm:~6.21.0"
-  checksum: 10c0/3802f598608638e13ca350fbe2db0db5dde9a0b6704295fa1b6cec6defe24f9baf6a891eee6eaecd016bcd5ea18edecdaf71679d87079fe468913701adb61387
+  checksum: 10c0/13a4638f2baba3efba2b8bc369dd6f950dccbfca78f318f9c9f2c7adc11fce14fc119723c38567dada2d57a873c092b7356c024924d5974a08f3c1f93dc706c6
   languageName: node
   linkType: hard
 
@@ -6385,7 +6385,7 @@ __metadata:
   resolution: "use-formatted-message@workspace:packages/use-formatted-message"
   dependencies:
     "@pob/rollup-esbuild": "npm:7.2.0"
-    "@types/node": "npm:22.18.11"
+    "@types/node": "npm:22.18.12"
     "@types/react": "npm:18.3.26"
     react: "npm:18.3.1"
     react-intl: "npm:7.0.1"
@@ -6406,7 +6406,7 @@ __metadata:
     "@pob/eslint-config-typescript-react": "npm:62.0.0"
     "@pob/rollup-esbuild": "npm:7.2.0"
     "@pob/root": "npm:19.2.0"
-    "@types/node": "npm:22.18.11"
+    "@types/node": "npm:22.18.12"
     check-package-dependencies: "npm:10.4.1"
     eslint: "npm:9.37.0"
     typedoc: "npm:0.28.14"
@@ -6419,7 +6419,7 @@ __metadata:
   resolution: "use-react-intl-formatters@workspace:packages/use-react-intl-formatters"
   dependencies:
     "@pob/rollup-esbuild": "npm:7.2.0"
-    "@types/node": "npm:22.18.11"
+    "@types/node": "npm:22.18.12"
     react: "npm:18.3.1"
     react-intl: "npm:7.0.1"
     typescript: "npm:5.9.3"
