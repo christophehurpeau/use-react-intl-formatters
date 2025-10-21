@@ -1368,7 +1368,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:16 || 17 || 18, @types/react@npm:18.3.26":
+"@types/react@npm:*, @types/react@npm:19.2.2":
+  version: 19.2.2
+  resolution: "@types/react@npm:19.2.2"
+  dependencies:
+    csstype: "npm:^3.0.2"
+  checksum: 10c0/f830b1204aca4634ce3c6cb3477b5d3d066b80a4dd832a4ee0069acb504b6debd2416548a43a11c1407c12bc60e2dc6cf362934a18fe75fe06a69c0a98cba8ab
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:16 || 17 || 18":
   version: 18.3.26
   resolution: "@types/react@npm:18.3.26"
   dependencies:
@@ -4380,7 +4389,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loose-envify@npm:^1.1.0, loose-envify@npm:^1.4.0":
+"loose-envify@npm:^1.4.0":
   version: 1.4.0
   resolution: "loose-envify@npm:1.4.0"
   dependencies:
@@ -5227,12 +5236,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:18.3.1":
-  version: 18.3.1
-  resolution: "react@npm:18.3.1"
-  dependencies:
-    loose-envify: "npm:^1.1.0"
-  checksum: 10c0/283e8c5efcf37802c9d1ce767f302dd569dd97a70d9bb8c7be79a789b9902451e0d16334b05d73299b20f048cbc3c7d288bbbde10b701fa194e2089c237dbea3
+"react@npm:19.2.0":
+  version: 19.2.0
+  resolution: "react@npm:19.2.0"
+  checksum: 10c0/1b6d64eacb9324725bfe1e7860cb7a6b8a34bc89a482920765ebff5c10578eb487e6b46b2f0df263bd27a25edbdae2c45e5ea5d81ae61404301c1a7192c38330
   languageName: node
   linkType: hard
 
@@ -6386,8 +6393,8 @@ __metadata:
   dependencies:
     "@pob/rollup-esbuild": "npm:7.2.0"
     "@types/node": "npm:22.18.12"
-    "@types/react": "npm:18.3.26"
-    react: "npm:18.3.1"
+    "@types/react": "npm:19.2.2"
+    react: "npm:19.2.0"
     react-intl: "npm:7.0.1"
     typescript: "npm:5.9.3"
     use-react-intl-formatters: "npm:6.0.1"
@@ -6420,7 +6427,7 @@ __metadata:
   dependencies:
     "@pob/rollup-esbuild": "npm:7.2.0"
     "@types/node": "npm:22.18.12"
-    react: "npm:18.3.1"
+    react: "npm:19.2.0"
     react-intl: "npm:7.0.1"
     typescript: "npm:5.9.3"
   peerDependencies:
