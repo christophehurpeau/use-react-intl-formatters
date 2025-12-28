@@ -7,7 +7,7 @@
   "repository": "https://github.com/christophehurpeau/use-react-intl-formatters.git",
   "homepage": "https://github.com/christophehurpeau/use-react-intl-formatters",
   "type": "module",
-  "packageManager": "yarn@4.11.0",
+  "packageManager": "yarn@4.12.0",
   "engines": {
     "node": ">=22.18.0"
   },
@@ -39,11 +39,10 @@
   },
   "prettier": "@pob/root/prettier-config",
   "devDependencies": {
-    "@pob/eslint-config": "62.0.0",
-    "@pob/eslint-config-typescript": "62.0.0",
-    "@pob/eslint-config-typescript-react": "62.0.0",
+    "@pob/eslint-config": "65.0.2",
+    "@pob/eslint-config-typescript-react": "65.0.2",
     "@pob/rollup-esbuild": "7.4.2",
-    "@pob/root": "19.2.0",
+    "@pob/root": "20.4.2",
     "@types/node": "22.18.13",
     "check-package-dependencies": "10.5.0",
     "eslint": "9.39.2",
