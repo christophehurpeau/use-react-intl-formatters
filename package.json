@@ -25,10 +25,10 @@
     "lint:prettier": "pob-root-prettier --check .",
     "lint:prettier:fix": "pob-root-prettier --write .",
     "postinstall": "pob-root-postinstall",
-    "test": "TZ=UTC node  --test packages/*/src/**/*.test.ts",
-    "test:coverage": "TZ=UTC npx c8 --all --src ./src node  --test packages/*/src/**/*.test.ts",
-    "test:coverage:json": "TZ=UTC npx c8 --reporter=json --all --src ./src node  --test packages/*/src/**/*.test.ts",
-    "test:watch": "TZ=UTC node  --test packages/*/src/**/*.test.ts",
+    "test": "TZ=UTC node --test packages/*/src/**/*.test.ts",
+    "test:coverage": "TZ=UTC npx c8 --all --src ./src node --test packages/*/src/**/*.test.ts",
+    "test:coverage:json": "TZ=UTC npx c8 --reporter=json --all --src ./src node --test packages/*/src/**/*.test.ts",
+    "test:watch": "TZ=UTC node --test packages/*/src/**/*.test.ts",
     "tsc": "tsc -b",
     "watch": "yarn clean:build && rollup --config rollup.config.mjs --watch"
   },
@@ -39,14 +39,14 @@
   },
   "prettier": "@pob/root/prettier-config",
   "devDependencies": {
-    "@pob/eslint-config": "65.0.2",
-    "@pob/eslint-config-typescript-react": "65.0.2",
-    "@pob/rollup-esbuild": "7.4.2",
-    "@pob/root": "20.4.2",
+    "@pob/eslint-config": "65.2.0",
+    "@pob/eslint-config-typescript-react": "65.2.0",
+    "@pob/rollup-esbuild": "8.1.2",
+    "@pob/root": "22.3.0",
     "@types/node": "22.18.13",
     "check-package-dependencies": "10.5.0",
-    "eslint": "9.39.2",
-    "typedoc": "0.28.15",
+    "eslint": "10.0.3",
+    "typedoc": "0.28.18",
     "typescript": "5.9.3"
   }
 }
