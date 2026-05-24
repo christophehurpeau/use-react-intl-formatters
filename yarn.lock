@@ -370,15 +370,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/core@npm:^0.17.0":
-  version: 0.17.0
-  resolution: "@eslint/core@npm:0.17.0"
-  dependencies:
-    "@types/json-schema": "npm:^7.0.15"
-  checksum: 10c0/9a580f2246633bc752298e7440dd942ec421860d1946d0801f0423830e67887e4aeba10ab9a23d281727a978eb93d053d1922a587d502942a713607f40ed704e
-  languageName: node
-  linkType: hard
-
 "@eslint/core@npm:^1.1.1, @eslint/core@npm:^1.2.1":
   version: 1.2.1
   resolution: "@eslint/core@npm:1.2.1"
@@ -416,16 +407,6 @@ __metadata:
   version: 3.0.5
   resolution: "@eslint/object-schema@npm:3.0.5"
   checksum: 10c0/1db337431f520b99e9edda64ef5fafd7ec6a029843eeb608753025125b6649d861d843cffafafd3c4e37926d7d5f9ec0c6a8e3665c13c3da2144e8132892e92e
-  languageName: node
-  linkType: hard
-
-"@eslint/plugin-kit@npm:^0.4.0":
-  version: 0.4.1
-  resolution: "@eslint/plugin-kit@npm:0.4.1"
-  dependencies:
-    "@eslint/core": "npm:^0.17.0"
-    levn: "npm:^0.4.1"
-  checksum: 10c0/51600f78b798f172a9915dffb295e2ffb44840d583427bc732baf12ecb963eb841b253300e657da91d890f4b323d10a1bd12934bf293e3018d8bb66fdce5217b
   languageName: node
   linkType: hard
 
@@ -1953,19 +1934,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"check-package-dependencies@npm:10.5.0":
-  version: 10.5.0
-  resolution: "check-package-dependencies@npm:10.5.0"
+"check-package-dependencies@npm:11.1.1":
+  version: 11.1.1
+  resolution: "check-package-dependencies@npm:11.1.1"
   dependencies:
-    "@eslint/plugin-kit": "npm:^0.4.0"
+    "@eslint/plugin-kit": "npm:^0.7.1"
     jsonc-parser: "npm:^3.3.1"
-    semver: "npm:^7.7.3"
+    semver: "npm:^7.7.4"
     semver-utils: "npm:^1.1.4"
-    tslib: "npm:^2.8.1"
     type-fest: "npm:^4.37.0 || ^5.1.0"
+  peerDependencies:
+    eslint: ^10.0.3
+  peerDependenciesMeta:
+    eslint:
+      optional: true
   bin:
     check-package-dependencies: ./bin/check-package-dependencies.mjs
-  checksum: 10c0/20bb8514455bd9d327cde8b4aee873e052110707fe6c47488558fd5895ddf0dd32cdab10aca05331bf8b92d143a34b9517babe064596289e7bf32bf5d8a47bd4
+  checksum: 10c0/ca0f0cc5e5dace8a7a61265d675c8a51d800c3f466037cd04e889cdfe5dddd6c0f20498b632e2a8b30b2ac267fff205136d465fcbd944dbe6c3c72062d2f39d2
   languageName: node
   linkType: hard
 
@@ -5420,7 +5405,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:2, tslib@npm:^2.4.0, tslib@npm:^2.8.1":
+"tslib@npm:2, tslib@npm:^2.4.0":
   version: 2.8.1
   resolution: "tslib@npm:2.8.1"
   checksum: 10c0/9c4759110a19c53f992d9aae23aac5ced636e99887b51b9e61def52611732872ff7668757d4e4c61f19691e36f4da981cd9485e869b4a7408d689f6bf1f14e62
@@ -5736,7 +5721,7 @@ __metadata:
     "@pob/rollup-esbuild": "npm:8.1.2"
     "@pob/root": "npm:22.3.0"
     "@types/node": "npm:22.18.13"
-    check-package-dependencies: "npm:10.5.0"
+    check-package-dependencies: "npm:11.1.1"
     eslint: "npm:10.4.0"
     typedoc: "npm:0.28.19"
     typescript: "npm:5.9.3"
