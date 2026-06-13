@@ -14,8 +14,10 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: Enable Corepack
-        run: corepack enable
+      - name: Install pnpm
+        uses: pnpm/action-setup@v6
+        with:
+          version: 11
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v6
@@ -24,41 +26,43 @@ jobs:
           registry-url: "https://registry.npmjs.org"
 
       - name: Install Dependencies
-        run: yarn install --immutable
+        run: pnpm install --frozen-lockfile
 
       - name: Checks
-        run: yarn run checks
+        run: pnpm run checks
         if: startsWith(matrix.node-version, '24.')
 
       - name: Build
-        run: yarn run build
+        run: pnpm run build
         if: startsWith(matrix.node-version, '24.')
 
-      - name: Prettier
-        run: yarn run lint:prettier
+      - name: Format
+        run: pnpm run format:check
         if: startsWith(matrix.node-version, '24.')
 
       - name: Typescript
-        run: yarn run tsc
+        run: pnpm run tsc
         if: startsWith(matrix.node-version, '24.')
 
       - name: Eslint
-        run: yarn run lint:eslint
+        run: pnpm run lint:eslint
         if: startsWith(matrix.node-version, '24.')
 
       - name: Check nothing was forgotten before commit
         if: startsWith(matrix.node-version, '24.')
-        run: yarn run repository-check-dirty
+        run: pnpm exec repository-check-dirty
 
       - name: Generate Test Coverage
-        run: yarn run test:coverage:json
+        run: pnpm run test:coverage:json
         if: startsWith(matrix.node-version, '24.')
         env:
           CI: true
 
       - name: Send results to codecov
-        uses: codecov/codecov-action@v5
+        uses: codecov/codecov-action@v7
         with:
           fail_ci_if_error: true
           token: ${{ secrets.CODECOV_TOKEN }}
+          files: ./coverage/coverage-final.json
+          disable_search: true
         if: startsWith(matrix.node-version, '24.') && github.actor != 'dependabot[bot]'

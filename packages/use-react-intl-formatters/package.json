@@ -3,23 +3,27 @@
   "version": "6.0.1",
   "description": "react-intl format hooks with use memo",
   "keywords": [],
-  "author": "Christophe Hurpeau <christophe@hurpeau.com> (https://christophe.hurpeau.com)",
+  "homepage": "https://github.com/christophehurpeau/use-react-intl-formatters",
+  "bugs": {
+    "url": "https://github.com/christophehurpeau/use-react-intl-formatters/issues"
+  },
   "license": "ISC",
+  "author": "Christophe Hurpeau <christophe@hurpeau.com> (https://christophe.hurpeau.com)",
   "repository": {
     "type": "git",
     "url": "https://github.com/christophehurpeau/use-react-intl-formatters.git",
     "directory": "packages/use-react-intl-formatters"
   },
-  "homepage": "https://github.com/christophehurpeau/use-react-intl-formatters",
+  "files": [
+    "src",
+    "dist"
+  ],
   "type": "module",
-  "engines": {
-    "node": ">=22.18.0"
-  },
   "sideEffects": false,
   "main": "./dist/index-node.mjs",
-  "types": "./dist/definitions/index.d.ts",
   "module": "./dist/index-browser.es.js",
   "browser": "./dist/index-browser.es.js",
+  "types": "./dist/definitions/index.d.ts",
   "exports": {
     "./package.json": "./package.json",
     ".": {
@@ -32,19 +36,27 @@
       }
     }
   },
-  "files": [
-    "src",
-    "dist"
-  ],
   "scripts": {
-    "build": "yarn clean:build && rollup --config rollup.config.mjs && yarn run build:definitions",
+    "build": "pnpm run clean:build && rollup --config rollup.config.mjs && pnpm run build:definitions",
     "build:definitions": "tsc -p tsconfig.json",
     "clean": "yarn clean:build",
     "clean:build": "pob-esbuild-clean-out dist",
-    "lint": "yarn run lint:eslint",
-    "lint:eslint": "yarn '../..' run eslint --quiet 'packages/use-react-intl-formatters'",
-    "test": "yarn '../..' run test -- 'packages/use-react-intl-formatters'",
+    "lint": "pnpm run lint:eslint",
+    "lint:eslint": "pnpm run --dir '../..' eslint --quiet 'packages/use-react-intl-formatters'",
+    "test": "pnpm run --dir '../..' test -- 'packages/use-react-intl-formatters'",
+    "tsc": "tsc",
     "watch": "yarn clean:build && rollup --config rollup.config.mjs --watch"
+  },
+  "devDependencies": {
+    "@pob/rollup-esbuild": "9.1.1",
+    "@types/node": "22.18.13",
+    "react": "19.2.7",
+    "react-intl": "10.1.13",
+    "typescript": "6.0.3"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
+    "react-intl": "^10.0.0"
   },
   "browserslist": {
     "production": [
@@ -54,6 +66,9 @@
       "not safari < 10",
       "not ios_saf < 10"
     ]
+  },
+  "engines": {
+    "node": ">=22.18.0"
   },
   "pob": {
     "bundler": "rollup-esbuild",
@@ -71,17 +86,5 @@
       }
     ],
     "typescript": true
-  },
-  "prettier": "@pob/root/prettier-config",
-  "peerDependencies": {
-    "react": "^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
-    "react-intl": "^7.0.0"
-  },
-  "devDependencies": {
-    "@pob/rollup-esbuild": "8.3.0",
-    "@types/node": "22.18.13",
-    "react": "18.3.1",
-    "react-intl": "7.0.1",
-    "typescript": "5.9.3"
   }
 }

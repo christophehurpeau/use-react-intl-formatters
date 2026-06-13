@@ -15,8 +15,7 @@
     },
     "project": {
       "type": "lib",
-      "packageManager": "yarn",
-      "yarnNodeLinker": "node-modules",
+      "packageManager": "pnpm",
       "onlyLatestLTS": true,
       "ci": true
     }

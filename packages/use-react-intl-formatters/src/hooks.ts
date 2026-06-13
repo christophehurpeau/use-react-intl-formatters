@@ -61,8 +61,6 @@ export function useIntlFormatters(): UseIntlFormatters {
 
 /* message */
 
-type FormatMessageParameters = Parameters<IntlShape["formatMessage"]>;
-
 export function useFormattedMessage(descriptor: MessageDescriptor): string;
 export function useFormattedMessage(
   descriptor: MessageDescriptor,
@@ -79,7 +77,10 @@ export function useFormattedMessage(
 ): ReactNode[];
 export function useFormattedMessage(
   descriptor: MessageDescriptor,
-  values?: FormatMessageParameters[1],
+  values?: Record<
+    string,
+    FormatXMLElementFn<string, ReactNode> | PrimitiveType | ReactNode
+  >,
   deps: unknown[] = [],
 ): ReactNode[] | string {
   const intlFormatters = useIntlFormatters();

@@ -1,52 +1,56 @@
 {
   "name": "use-react-intl-formatters-monorepo",
-  "private": true,
   "version": "6.0.1",
-  "author": "Christophe Hurpeau <christophe@hurpeau.com> (https://christophe.hurpeau.com)",
-  "license": "ISC",
-  "repository": "https://github.com/christophehurpeau/use-react-intl-formatters.git",
+  "private": true,
   "homepage": "https://github.com/christophehurpeau/use-react-intl-formatters",
-  "type": "module",
-  "packageManager": "yarn@4.12.0",
-  "engines": {
-    "node": ">=22.18.0"
+  "bugs": {
+    "url": "https://github.com/christophehurpeau/use-react-intl-formatters/issues"
   },
+  "license": "ISC",
+  "author": "Christophe Hurpeau <christophe@hurpeau.com> (https://christophe.hurpeau.com)",
+  "repository": "https://github.com/christophehurpeau/use-react-intl-formatters.git",
   "workspaces": [
     "packages/*"
   ],
+  "type": "module",
   "scripts": {
-    "build": "yarn clean:build && rollup --config rollup.config.mjs && yarn run build:definitions",
+    "build": "pnpm run clean:build && rollup --config rollup.config.mjs && pnpm run build:definitions",
     "build:definitions": "tsc -b",
     "checks": "node scripts/check-packages.js",
-    "clean:build": "yarn workspaces foreach --parallel -A run clean:build",
+    "clean:build": "pnpm -r --parallel run clean:build",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check .",
     "generate:api": "typedoc --tsconfig tsconfig.doc.json",
-    "lint": "yarn run lint:prettier && yarn run lint:eslint",
+    "lint": "pnpm run format && pnpm run lint:eslint",
     "lint:eslint": "eslint --quiet .",
     "lint:prettier": "pob-root-prettier --check .",
     "lint:prettier:fix": "pob-root-prettier --write .",
-    "postinstall": "pob-root-postinstall",
+    "prepare": "pob-root-postinstall",
     "test": "TZ=UTC node --test packages/*/src/**/*.test.ts",
     "test:coverage": "TZ=UTC npx c8 --all --src ./src node --test packages/*/src/**/*.test.ts",
     "test:coverage:json": "TZ=UTC npx c8 --reporter=json --all --src ./src node --test packages/*/src/**/*.test.ts",
     "test:watch": "TZ=UTC node --test packages/*/src/**/*.test.ts",
     "tsc": "tsc -b",
-    "watch": "yarn clean:build && rollup --config rollup.config.mjs --watch"
+    "watch": "pnpm run clean:build && rollup --config rollup.config.mjs --watch"
+  },
+  "devDependencies": {
+    "@pob/eslint-config": "65.5.0",
+    "@pob/eslint-config-typescript-react": "65.5.0",
+    "@pob/rollup-esbuild": "9.1.1",
+    "@pob/root": "24.3.0",
+    "@types/node": "22.18.13",
+    "check-package-dependencies": "11.1.1",
+    "eslint": "10.4.1",
+    "typedoc": "0.28.19",
+    "typescript": "6.0.3"
   },
   "commitlint": {
     "extends": [
       "@pob/root/commitlint-config"
     ]
   },
-  "prettier": "@pob/root/prettier-config",
-  "devDependencies": {
-    "@pob/eslint-config": "65.4.3",
-    "@pob/eslint-config-typescript-react": "65.4.3",
-    "@pob/rollup-esbuild": "8.3.0",
-    "@pob/root": "22.3.0",
-    "@types/node": "22.18.13",
-    "check-package-dependencies": "11.1.1",
-    "eslint": "10.4.1",
-    "typedoc": "0.28.19",
-    "typescript": "5.9.3"
+  "engines": {
+    "node": ">=22.18.0",
+    "pnpm": ">= 11.0.0"
   }
 }
