@@ -51,12 +51,12 @@
     "@pob/rollup-esbuild": "9.1.1",
     "@types/node": "22.18.13",
     "react": "19.2.7",
-    "react-intl": "10.1.13",
+    "react-intl": "10.1.14",
     "typescript": "6.0.3"
   },
   "peerDependencies": {
     "react": "^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
-    "react-intl": "^10.0.0"
+    "react-intl": "^10.1.14"
   },
   "browserslist": {
     "production": [
