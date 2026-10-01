@@ -48,7 +48,7 @@
     "watch": "yarn clean:build && rollup --config rollup.config.mjs --watch"
   },
   "devDependencies": {
-    "@pob/rollup-esbuild": "9.1.1",
+    "@pob/rollup-esbuild": "9.2.0",
     "@types/node": "22.18.13",
     "react": "19.2.7",
     "react-intl": "10.1.13",
