@@ -51,7 +51,7 @@
     "use-react-intl-formatters": "workspace:*"
   },
   "devDependencies": {
-    "@pob/rollup-esbuild": "9.1.1",
+    "@pob/rollup-esbuild": "9.2.0",
     "@types/node": "22.18.13",
     "@types/react": "19.2.17",
     "react": "19.2.7",
