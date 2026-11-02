@@ -38,25 +38,29 @@
   },
   "scripts": {
     "build": "pnpm run clean:build && rollup --config rollup.config.mjs && pnpm run build:definitions",
-    "build:definitions": "tsc -p tsconfig.json",
+    "build:definitions": "tsrs -p tsconfig.json",
     "clean": "yarn clean:build",
     "clean:build": "pob-esbuild-clean-out dist",
-    "lint": "pnpm run lint:eslint",
-    "lint:eslint": "pnpm run --dir '../..' eslint --quiet 'packages/use-formatted-message'",
+    "lint": "pnpm run lint:oxlint && pnpm run lint:eslint",
+    "lint:eslint": "pnpm --dir '../..' exec eslint --quiet 'packages/use-formatted-message'",
+    "lint:oxlint": "pnpm --dir '../..' exec oxlint --quiet 'packages/use-formatted-message'",
     "test": "pnpm run --dir '../..' test -- 'packages/use-formatted-message'",
-    "tsc": "tsc",
+    "tsc": "tsrs",
+    "tsc:go": "tsc",
     "watch": "yarn clean:build && rollup --config rollup.config.mjs --watch"
   },
   "dependencies": {
     "use-react-intl-formatters": "workspace:*"
   },
   "devDependencies": {
-    "@pob/rollup-esbuild": "9.1.1",
+    "@pob/rollup-esbuild": "11.1.0",
     "@types/node": "22.18.13",
     "@types/react": "19.2.17",
+    "@typescript/native": "npm:typescript@7.0.2",
     "react": "19.2.7",
     "react-intl": "10.1.13",
-    "typescript": "6.0.3"
+    "tsrs": "0.18.0-ts7.1.0-dev.20260929",
+    "typescript": "npm:@typescript/typescript6@6.0.2"
   },
   "peerDependencies": {
     "react": "^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
