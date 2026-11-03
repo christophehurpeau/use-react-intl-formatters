@@ -33,10 +33,10 @@
     "watch": "pnpm run clean:build && rollup --config rollup.config.mjs --watch"
   },
   "devDependencies": {
-    "@pob/eslint-config": "68.0.0",
-    "@pob/eslint-config-typescript-react": "68.0.0",
-    "@pob/rollup-esbuild": "11.1.0",
-    "@pob/root": "28.2.2",
+    "@pob/eslint-config": "68.1.0",
+    "@pob/eslint-config-typescript-react": "68.1.0",
+    "@pob/rollup-esbuild": "11.2.0",
+    "@pob/root": "28.3.0",
     "@types/node": "24.19.1",
     "@typescript/native": "npm:typescript@7.0.2",
     "eslint": "10.12.0",

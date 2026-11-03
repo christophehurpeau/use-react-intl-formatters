@@ -50,7 +50,7 @@
     "watch": "yarn clean:build && rollup --config rollup.config.mjs --watch"
   },
   "devDependencies": {
-    "@pob/rollup-esbuild": "11.1.0",
+    "@pob/rollup-esbuild": "11.2.0",
     "@types/node": "24.19.1",
     "@typescript/native": "npm:typescript@7.0.2",
     "react": "19.2.7",
