@@ -11,13 +11,13 @@ import { useIntl } from "react-intl";
 /* formatters */
 
 interface UseIntlFormatters {
-  // eslint-disable-next-line @typescript-eslint/method-signature-style
+  // oxlint-disable-next-line typescript/method-signature-style
   formatMessage(
     descriptor: MessageDescriptor,
     values?: Record<string, FormatXMLElementFn<string, string> | PrimitiveType>,
     opts?: IntlMessageFormatOptions,
   ): string;
-  // eslint-disable-next-line @typescript-eslint/method-signature-style
+  // oxlint-disable-next-line typescript/method-signature-style
   formatMessage(
     descriptor: MessageDescriptor,
     values?: Record<
@@ -41,7 +41,7 @@ export function useIntlFormatters(): UseIntlFormatters {
   const intl = useIntl();
 
   const formatMessage = useCallback<UseIntlFormatters["formatMessage"]>(
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-return
+    // oxlint-disable-next-line typescript/no-unsafe-return
     (descriptor, values) => intl.formatMessage(descriptor, values) as any,
     [intl],
   );
@@ -86,7 +86,7 @@ export function useFormattedMessage(
   const intlFormatters = useIntlFormatters();
   return useMemo(() => {
     return intlFormatters.formatMessage(descriptor, values);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // oxlint-disable-next-line react/exhaustive-deps
   }, [descriptor, ...deps]);
 }
 
