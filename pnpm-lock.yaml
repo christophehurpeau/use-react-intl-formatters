@@ -52,17 +52,17 @@ importers:
         specifier: 24.19.1
         version: 24.19.1
       '@types/react':
-        specifier: 19.2.17
-        version: 19.2.17
+        specifier: 19.3.0
+        version: 19.3.0
       '@typescript/native':
         specifier: npm:typescript@7.0.2
         version: typescript@7.0.2
       react:
-        specifier: 19.2.7
-        version: 19.2.7
+        specifier: 19.3.1
+        version: 19.3.1
       react-intl:
         specifier: 10.1.13
-        version: 10.1.13(@types/react@19.2.17)(react@19.2.7)
+        version: 10.1.13(@types/react@19.3.0)(react@19.3.1)
       tsrs:
         specifier: 0.18.0-ts7.1.0-dev.20260929
         version: 0.18.0-ts7.1.0-dev.20260929
@@ -82,11 +82,11 @@ importers:
         specifier: npm:typescript@7.0.2
         version: typescript@7.0.2
       react:
-        specifier: 19.2.7
-        version: 19.2.7
+        specifier: 19.3.1
+        version: 19.3.1
       react-intl:
         specifier: 10.1.13
-        version: 10.1.13(@types/react@19.2.17)(react@19.2.7)
+        version: 10.1.13(@types/react@19.3.0)(react@19.3.1)
       tsrs:
         specifier: 0.18.0-ts7.1.0-dev.20260929
         version: 0.18.0-ts7.1.0-dev.20260929
@@ -1055,8 +1055,8 @@ packages:
   '@types/node@24.19.1':
     resolution: {integrity: sha512-aS3/DG0oM05K0RIXXP+hKjinGG5IgSSVGzswZxW3O0sS3pH4/fycXundUC9XsszgKCk4gHXylTEK6hyFxVxnoQ==}
 
-  '@types/react@19.2.17':
-    resolution: {integrity: sha512-MXfmqaVPEVgkBT/aY0aGCkRWWtByiYQXo3xdQ8r5RzuFrPiRn8Gar2tQdXSUQ2GKV3bkXckek89V8wQBY2Q/Aw==}
+  '@types/react@19.3.0':
+    resolution: {integrity: sha512-N0rFCuH9YoxG9/m61l9MfpJKfmLOVU0em7ipIz6TRgSSkvReLB9vL85GB+yr8Bs5leqpvg96JSwF4ZS1s4viQg==}
 
   '@types/resolve@1.20.2':
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
@@ -2047,8 +2047,8 @@ packages:
       '@types/react': '19'
       react: '19'
 
-  react@19.2.7:
-    resolution: {integrity: sha512-HNe9WslTbXmFK8o8cmwgAeJFSBvt1bPdHCVKtaaV+WlAN36mpT4hcRpwbf3fY56ar2oIXzsBpOAiIRHAdY0OlQ==}
+  react@19.3.1:
+    resolution: {integrity: sha512-QNhWdt7nrgVWWQG58QuGsAR3jv3Hbe4mb4vz7w2csnHavciZJgda1CPNaldF6eVxv90ud3jUXpKlHL69gO38yw==}
     engines: {node: '>=0.10.0'}
 
   refa@0.12.1:
@@ -2973,7 +2973,7 @@ snapshots:
     dependencies:
       undici-types: 7.24.6
 
-  '@types/react@19.2.17':
+  '@types/react@19.3.0':
     dependencies:
       csstype: 3.2.3
 
@@ -3965,15 +3965,15 @@ snapshots:
 
   quote-js-string@0.1.0: {}
 
-  react-intl@10.1.13(@types/react@19.2.17)(react@19.2.7):
+  react-intl@10.1.13(@types/react@19.3.0)(react@19.3.1):
     dependencies:
       '@formatjs/icu-messageformat-parser': 3.5.11
       '@formatjs/intl': 4.1.13
-      '@types/react': 19.2.17
+      '@types/react': 19.3.0
       intl-messageformat: 11.2.8
-      react: 19.2.7
+      react: 19.3.1
 
-  react@19.2.7: {}
+  react@19.3.1: {}
 
   refa@0.12.1:
     dependencies:
