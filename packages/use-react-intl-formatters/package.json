@@ -54,13 +54,13 @@
     "@types/node": "24.19.1",
     "@typescript/native": "npm:typescript@7.0.2",
     "react": "19.2.7",
-    "react-intl": "10.1.13",
+    "react-intl": "12.1.7",
     "tsrs": "0.24.0-ts7.1.0-beta",
     "typescript": "npm:@typescript/typescript6@6.0.2"
   },
   "peerDependencies": {
     "react": "^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
-    "react-intl": "^10.0.0"
+    "react-intl": "^12.1.7"
   },
   "browserslist": {
     "production": [
