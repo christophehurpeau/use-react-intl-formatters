@@ -1,3 +1,12 @@
 {
-  "extends": ["config:js-lib", "github>christophehurpeau/renovate-presets"]
+  "extends": ["config:js-lib", "github>christophehurpeau/renovate-presets"],
+  "packageRules": [
+    {
+      "description": "react-intl is a peer dependency shared with the consuming app: do not raise the published peer range minimum on each release, the app keeps control of its version. devDependencies keep updating. Remove if raising the minimum becomes wanted.",
+      "matchManagers": ["npm"],
+      "matchDepTypes": ["peerDependencies"],
+      "matchPackageNames": ["react-intl"],
+      "rangeStrategy": "update-lockfile"
+    }
+  ]
 }
